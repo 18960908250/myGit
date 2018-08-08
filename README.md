@@ -1,3 +1,3 @@
 # myGit
-this is my first github project
-this is for testing and writing vue project
+This is my first github project.
+This is for testing and writing vue project.
