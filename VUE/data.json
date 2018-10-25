@@ -1,0 +1,18 @@
+{
+  "mysell": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "data": [
+    {
+      "a": "asd",
+      "b": "bas",
+      "c": "ccs"
+    },{
+      "a": "asd",
+      "b": "bas",
+      "c": "ccs"
+    }
+  ]
+}

@@ -1,21 +1,25 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import Test from '@/components/Test'
+/*import NewSong from '@/views/newSong/newSong'
+import Rank from '@/views/rank/rank'
+import Navbar from '@/components/navbar'*/
+import Search from '@/views/search/search'
+import Searchbar from '@/components/searchBar'
+import { routes} from './routers'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
+    ...routes,
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-    {
-      path: '/Test',
-      name: 'Test',
-      component: Test
+      path: '/search',
+      name: 'Search',
+      components:{
+        navbar: Searchbar,
+        default: Search
+      }
     }
   ]
 })
