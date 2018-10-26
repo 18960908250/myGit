@@ -1,14 +1,37 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <mt-header title="">
+      <div slot="left">
+        <router-link to="/" icon="back" slot="left">
+          <img src="http://m.kugou.com/v3/static/images/index/logo.png" alt="">
+        </router-link>
+      </div>
+      <mt-button icon="more" slot="right"></mt-button>
+    </mt-header>
+    <router-view name="navbar"/>
+    <div class="content">
+      <mt-spinner type="triple-bounce" v-show="$store.state.isLoading"></mt-spinner>
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+//  import * as api from '@/server'
+
+  export default {
+    name: 'App',
+    data(){
+      return {
+
+      }
+    },
+    created(){
+    },
+    methods:{
+
+    }
+  }
 </script>
 
 <style>
@@ -16,8 +39,5 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

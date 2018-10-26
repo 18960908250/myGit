@@ -10,7 +10,20 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      "/proxy/": {
+        target: "http://m.kugou.com",//配置地址
+        secure: false,//false为http请求，true为https
+        changeOrigin: true,//是否是跨域，true为是changeOrigin
+        pathRewrite: {//路径改写规则
+          "^/proxy": "",
+          "^/api": "/list"
+        },
+        "header": {// 设置请求头，伪装成手机端访问
+          "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Mobile Safari/537.36"
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
@@ -20,7 +33,7 @@ module.exports = {
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+
     /**
      * Source Maps
      */
