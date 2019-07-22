@@ -1,0 +1,23 @@
+.pageBox{width: 980px;margin: 50px auto 0;text-align: center;}
+#music{width: 980px;margin: 50px auto 0;border: 1px solid #000;padding-bottom: 10px;}
+#music header{text-align: center}
+#music header h2{}
+#music header input {height: 28px;font-size: 14px;margin-right: 5px;}
+#music header input[type=text]{}
+#music header input[type=button]{width: 80px;}
+
+#music .main{width: 100%;padding: 0 15px;text-align: center;margin: 15px 0;}
+#music .main thead{}
+#music .main thead tr{background: darkgray;}
+#music .main thead td{width: 60px;}
+#music tbody tr:nth-child(even){background: aliceblue}
+#music .main tbody tr:hover{background: aqua;}
+#music .main tbody .like{background: cornsilk;}
+#music .main tbody .active{background: bisque;}
+
+#music footer{padding: 0 15px;margin-bottom: 30px;}
+#music footer div{zoom:1;margin-bottom: 10px;}
+#music footer div:after{content: '';display: block;clear: both;}
+#music footer div span{float: left;}
+#music footer div span+span{float: right;}
+#music footer input{margin-right: 10px;}
