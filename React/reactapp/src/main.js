@@ -50,5 +50,8 @@ class Main extends React.Component{
 }
 /*chengeItemData={this.props.chengeItemData} deteleItemData = {this.props.deteleItemData}*/
 export default connect((states, props) => {
-    return states
+    const isCheckAll = (() => {
+        return states.data.every(item => item.selected)
+    })()
+    return Object.assign({},states, {isCheckAll})
 })(Main)

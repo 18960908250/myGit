@@ -7,7 +7,7 @@ class Footer extends React.Component{
         let checkArr = data.filter( item => {
             return item.selected
         })
-        console.log('footer', this.props)
+        // console.log('footer', this.props)
         const pathName = this.props.router.location.pathname
         return(
             <footer style={{display: data.length ? 'block': 'none'}}>

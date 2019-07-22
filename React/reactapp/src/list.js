@@ -22,6 +22,5 @@ class List extends React.Component {
     }
 }
 export default connect((states,props)=>{
-    states.isCheckAll = states.data.every(item => item.selected)
     return states
 })(List)
