@@ -1,25 +1,3 @@
-const pageData = {
-  background_path: "https://qnm.hunliji.com/o_1d5mf66m1femghpcrs5dds5i13.jpg",
-  music: {
-    audio: "http://qnvideo.hunliji.com/o_1bs08l4p6qohmjtupi66b10bd9.mp3",
-    close_img: "http://qnm.hunliji.com/o_1br8kc3teajn609b0peckg5g13.png",
-    img: "http://qnm.hunliji.com/o_1br8kc0amgei16441m8bnckahru.png"
-  },
-  page_icon: "",
-  theme_background: "https://qnm.hunliji.com/o_1d5mf66m1femghpcrs5dds5i13.jpg",
-  page: [
-    {
-      layout: {
-        background: "http://qnm.hunliji.com/o_1br87o6jh14cf2s6i6j1k3to5k1v.jpg",
-        elements: [
-          {
-            animate
-          }
-        ]
-      }
-    }
-  ]
-}
 function boot() {
   this.result = ''; //数据源
   this.card_id = ''; //请帖ID
@@ -66,15 +44,18 @@ boot.prototype = function () {
       this.editState = $this.getCookie('editState')
     }
     this.card_id = this.getParams('card_id');
-    this.type = this.getParams('type');
-    $.ajax({
+    this.type = 'app';
+    /*$.ajax({
       url: 'https://www.hunliji.com' + $this.API.template,
       type: 'get',
       data: {
         id: $this.card_id
       },
       success: function (res) {
+        console.log(res)
+        debugger
         if (res.status.RetCode == 0) {
+          download('fileName.txt', JSON.stringify(res.data))
           $this.result = res.data;
 
           $this.musicOpen = $this.result.music.img || '//qnm.hunliji.com/o_1bi67lq091qtt1gfs60cpadqjj7.png';
@@ -121,7 +102,8 @@ boot.prototype = function () {
           $this.init()
         }
       }
-    })
+    })*/
+    testFun()
     function testFun(){
         $this.result = pageData;
 
@@ -136,7 +118,7 @@ boot.prototype = function () {
             $this.writeCookie('musicStatePause', 'false', 360)
           }
         }
-        if (res.data.music.audio) {
+        if (pageData.music.audio) {
           if ($this.type) {
             $('body').on('touchstart', function () {
               if ($this.musicStatePause == 'false') {
@@ -144,7 +126,7 @@ boot.prototype = function () {
               }
             })
           }
-          document.getElementById('playMusic').setAttribute('src', res.data.music.audio.replace('http:', ''))
+          document.getElementById('playMusic').setAttribute('src', pageData.music.audio.replace('http:', ''))
           if ($this.musicStatePause == 'false') {
             document.getElementById('playMusic').play();
           }
@@ -167,6 +149,20 @@ boot.prototype = function () {
           });
         }
         $this.init()
+    }
+
+    function download(filename, text) {
+      debugger
+      var element = document.createElement('a');
+      element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+      element.setAttribute('download', filename);
+
+      element.style.display = 'none';
+      document.body.appendChild(element);
+
+      element.click();
+
+      document.body.removeChild(element);
     }
   }
   init = function () {
@@ -260,7 +256,6 @@ boot.prototype = function () {
       var nowClientHeight = document.documentElement.clientHeight || document.body.clientHeight;
       if (clientHeight > nowClientHeight) {
         if (navigator.userAgent.indexOf('Android') > -1) {
-          console.log($('#gusetBox').height())
           $('#gusetBox').css({
             'bottom': clientHeight - nowClientHeight + 'px',
             'top': nowClientHeight - $('#gusetBox').height() + 'px'
@@ -400,7 +395,7 @@ boot.prototype = function () {
       }
     }
     this.loading(_imgs, function () {
-      console.log('ok')
+
     })
   }
   loading = function (arr, func) {
@@ -998,7 +993,7 @@ boot.prototype = function () {
     _guest_div.innerHTML = '<p id="guestBtn" style="margin: 0 auto;width:' + 500 / $this.UI_WIDTH * $this.width + 'px;height:' + 88 / $this.UI_WIDTH * $this.width + 'px;line-height:' + 88 / $this.UI_WIDTH * $this.width + 'px;border-radius: ' + 44 / $this.UI_WIDTH * $this.width + 'px;">宾客回复</p>';
     setTimeout(function () {
       if ($('#guestPage').find('#guestBtn').length >= 1) {
-        console.log($('#guestPage').find('#guestBtn').length)
+
       } else {
         document.getElementById('guestPage') && document.getElementById('guestPage').appendChild(_guest_div)
         $this.isIphoneX() && $('#guest_action').css({
@@ -1079,7 +1074,7 @@ boot.prototype = function () {
       'padding-bottom': '34px',
       'background': '#fff'
     })
-    console.log($('#gusetBox'))
+
     $('#gusetBox').css({
       'bottom': '0'
     })
