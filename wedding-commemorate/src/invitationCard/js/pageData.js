@@ -3,7 +3,7 @@ const pageData = {
         [
             {
             "layout": {
-                "background": "../static/images/page1/page1Bg.jpg",
+                "background": "../static/images/pageBg.jpg",
                 "elements": [
                     {
                     "infinite": "",
@@ -360,7 +360,7 @@ const pageData = {
         },
             {
             "layout": {
-                "background": "http://qnm.hunliji.com/o_1br88mbad1g2q1l237ut1dsherl8b.jpg",
+                "background": "../static/images/pageBg.jpg",
                 "elements": [
                     {
                     "infinite": "",
@@ -369,7 +369,7 @@ const pageData = {
                     "animate": ["zoomIn"],
                     "delay": ["1000ms"],
                     "height": "137",
-                    "img": "http://qnm.hunliji.com/o_1br88n53ovtnjaoka0fgi6el9h.png",
+                    "img": "../static/images/page2/elementImg1.png",
                     "rotate": "",
                     "width": "132",
                     "x": "14",
@@ -380,7 +380,7 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_0",
                     "line_spacing": null
-                },
+                    },
                     {
                     "infinite": "",
                     "inf_delay": "ms",
@@ -388,7 +388,7 @@ const pageData = {
                     "animate": ["rotateInDownLeft"],
                     "delay": ["1500ms"],
                     "height": "147",
-                    "img": "http://qnm.hunliji.com/o_1br88n73q11gkmnumgm1ebv1he79m.png",
+                    "img": "../static/images/page2/elementImg2.png",
                     "rotate": "",
                     "width": "138",
                     "x": "582",
@@ -399,7 +399,7 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_1",
                     "line_spacing": null
-                },
+                    },
                     {
                     "infinite": "",
                     "inf_delay": "ms",
@@ -407,7 +407,7 @@ const pageData = {
                     "animate": ["rotateInDownRight"],
                     "delay": ["1500ms"],
                     "height": "160",
-                    "img": "http://qnm.hunliji.com/o_1br88n9mto271q0ra2u1a0esaga2.png",
+                    "img": "../static/images/page2/elementImg3.png",
                     "rotate": "",
                     "width": "147",
                     "x": "52",
@@ -426,7 +426,7 @@ const pageData = {
                     "animate": ["fadeIn"],
                     "delay": ["2000ms"],
                     "height": "23",
-                    "img": "http://qnm.hunliji.com/o_1br88ne1t16n34us15l81tuk15jmae.png",
+                    "img": "./image/page2/textImg1.png",
                     "rotate": "",
                     "width": "334",
                     "x": "208",
@@ -437,7 +437,7 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_3",
                     "line_spacing": null
-                },
+                    },
                     {
                     "infinite": "",
                     "inf_delay": "ms",
@@ -445,7 +445,7 @@ const pageData = {
                     "animate": ["fadeIn"],
                     "delay": ["2000ms"],
                     "height": "30",
-                    "img": "http://qnm.hunliji.com/o_1br88nhc868a5etr0l1ne5ilpaq.png",
+                    "img": "./image/page2/textImg2.png",
                     "rotate": "",
                     "width": "263",
                     "x": "243",
@@ -464,7 +464,7 @@ const pageData = {
                     "animate": ["zoomIn"],
                     "delay": ["2000ms"],
                     "height": "4",
-                    "img": "http://qnm.hunliji.com/o_1br88nk0mgag1vd91dfh13hq1djob6.png",
+                    "img": "./image/page2/lineImg.png",
                     "rotate": "",
                     "width": "124",
                     "x": "313",
@@ -478,7 +478,7 @@ const pageData = {
                 },
                     {
                     "animate": ["fadeInDown"],
-                    "img": "http://qnm.hunliji.com/o_1br8938ne17ai2os8joo1k1kjpbg.jpg",
+                    "img": "./image/page2/peopleImg.jpg",
                     "delay": ["100"],
                     "rotate": 0,
                     "x": "61",
@@ -486,7 +486,7 @@ const pageData = {
                     "width": "628",
                     "height": "851",
                     "mask": {
-                        "img": "http://qnm.hunliji.com/o_1br88no0p1fl91nus1517j37gf0bb.png",
+                        "img": "./image/peopleImgMask.png",
                         "width": "628",
                         "height": "851"
                     },
@@ -507,15 +507,16 @@ const pageData = {
         },
             {
             "layout": {
-                "background": "http://qnm.hunliji.com/o_1br896nptgjndvsmhuuv0bmpcf.jpg",
-                "elements": [{
+                "background": "../static/images/pageBg.jpg",
+                "elements": [
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeIn"],
                     "delay": ["1000ms"],
                     "height": "142",
-                    "img": "http://qnm.hunliji.com/o_1br898fcs1aga1o351f3j1kvr1vlode.png",
+                    "img": "../static/images/page3/elementImg1.png",
                     "rotate": "",
                     "width": "134",
                     "x": "27",
@@ -526,14 +527,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_0",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeInDown"],
                     "delay": ["1500ms"],
                     "height": "208",
-                    "img": "http://qnm.hunliji.com/o_1br898hsub2h1jphlkgqj48bcdj.png",
+                    "img": "../static/images/page3/elementImg2.png",
                     "rotate": "",
                     "width": "172",
                     "x": "503",
@@ -544,14 +546,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_1",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["zoomIn"],
                     "delay": ["1000ms"],
                     "height": "154",
-                    "img": "http://qnm.hunliji.com/o_1br898jp91lk41ubh1u6r16jp946do.png",
+                    "img": "../static/images/page3/elementImg3.png",
                     "rotate": "",
                     "width": "126",
                     "x": "520",
@@ -562,14 +565,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_2",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeIn"],
                     "delay": ["1500ms"],
                     "height": "23",
-                    "img": "http://qnm.hunliji.com/o_1br898p1jfif1r352ddivh1irqeb.png",
+                    "img": "./image/page3/textImg1.png",
                     "rotate": "",
                     "width": "193",
                     "x": "484",
@@ -580,14 +584,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_3",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["rollIn"],
                     "delay": ["2000ms"],
                     "height": "93",
-                    "img": "http://qnm.hunliji.com/o_1br898rm7ees1qa11d9u1l8p13raeg.png",
+                    "img": "./image/page3/textImg2.png",
                     "rotate": "",
                     "width": "93",
                     "x": "571",
@@ -598,9 +603,10 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_4",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "animate": ["fadeInRight"],
-                    "img": "http://qnm.hunliji.com/o_1br89dotr1qg51f3q1vbt16551j6jfr.jpg",
+                    "img": "./image/page3/peopleImg1.jpg",
                     "delay": ["100"],
                     "rotate": 0,
                     "x": "61",
@@ -608,7 +614,7 @@ const pageData = {
                     "width": "628",
                     "height": "393",
                     "mask": {
-                        "img": "http://qnm.hunliji.com/o_1br89902129v1jeb10spb1nlpffh.png",
+                        "img": "./image/peopleImgMask.png",
                         "width": "628",
                         "height": "393"
                     },
@@ -623,9 +629,10 @@ const pageData = {
                     "inf_delay": "",
                     "edit_btn_position": 0,
                     "fit_full_screen": 0
-                }, {
+                },
+                    {
                     "animate": ["fadeInLeft"],
-                    "img": "http://qnm.hunliji.com/o_1br89dqqc1ka0gi11v62lci117ig0.jpg",
+                    "img": "./image/page3/peopleImg2.jpg",
                     "delay": ["100"],
                     "rotate": 0,
                     "x": "61",
@@ -633,7 +640,7 @@ const pageData = {
                     "width": "386",
                     "height": "629",
                     "mask": {
-                        "img": "http://qnm.hunliji.com/o_1br89922b1jfi9k22qmurr1ostfm.png",
+                        "img": "./image/peopleImgMask.png",
                         "width": "386",
                         "height": "629"
                     },
@@ -648,20 +655,22 @@ const pageData = {
                     "inf_delay": "",
                     "edit_btn_position": 0,
                     "fit_full_screen": 0
-                }]
+                }
+                ]
             }
         },
             {
             "layout": {
-                "background": "http://qnm.hunliji.com/o_1br89evmh11i61iai4ojj2k1b9ngv.jpg",
-                "elements": [{
+                "background": "../static/images/pageBg.jpg",
+                "elements": [
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeIn"],
                     "delay": ["3000ms"],
                     "height": "310",
-                    "img": "http://qnm.hunliji.com/o_1br89hh6q1anbkuv19aj321lr1ij.png",
+                    "img": "../static/images/page4/elementImg1.png",
                     "rotate": "",
                     "width": "175",
                     "x": "311",
@@ -672,14 +681,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_0",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["zoomIn"],
                     "delay": ["1500ms"],
                     "height": "75",
-                    "img": "http://qnm.hunliji.com/o_1br89hjpjqt81ilm1h4f8m06nbio.png",
+                    "img": "../static/images/page4/elementImg2.png",
                     "rotate": "",
                     "width": "115",
                     "x": "318",
@@ -690,14 +700,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_1",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["rotateInDownRight"],
                     "delay": ["1500ms"],
                     "height": "188",
-                    "img": "http://qnm.hunliji.com/o_1br89hm1c107v1q5l12vb2vk1iqsit.png",
+                    "img": "../static/images/page4/elementImg3.png",
                     "rotate": "",
                     "width": "171",
                     "x": "608",
@@ -708,14 +719,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_2",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeIn"],
                     "delay": ["2000ms"],
                     "height": "23",
-                    "img": "http://qnm.hunliji.com/o_1br89hotodd4uc3it911e4kvlj2.png",
+                    "img": "./image/page4/textImg1.png",
                     "rotate": "",
                     "width": "354",
                     "x": "198",
@@ -726,9 +738,10 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_3",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "animate": ["fadeInLeft"],
-                    "img": "http://qnm.hunliji.com/o_1br89malk83d1bqrun64b01c7ul0.jpg",
+                    "img": "./image/page4/peopleImg1.jpg",
                     "delay": ["100"],
                     "rotate": 0,
                     "x": "61",
@@ -736,7 +749,7 @@ const pageData = {
                     "width": "330",
                     "height": "485",
                     "mask": {
-                        "img": "http://qnm.hunliji.com/o_1br89hvijvgb1daa1or81eff1c61kh.png",
+                        "img": "./image/peopleImgMask.png",
                         "width": "330",
                         "height": "485"
                     },
@@ -751,9 +764,10 @@ const pageData = {
                     "inf_delay": "",
                     "edit_btn_position": 0,
                     "fit_full_screen": 0
-                }, {
+                },
+                    {
                     "animate": ["zoomIn"],
-                    "img": "http://qnm.hunliji.com/o_1br89mcp0gbsuf21ad119hn1a2ml5.jpg",
+                    "img": "./image/page4/peopleImg2.jpg",
                     "delay": ["1000"],
                     "rotate": 0,
                     "x": "438",
@@ -761,7 +775,7 @@ const pageData = {
                     "width": "251",
                     "height": "326",
                     "mask": {
-                        "img": "http://qnm.hunliji.com/o_1br89i1gr4l3mso13jhl5d1ukrkm.png",
+                        "img": "./image/peopleImgMask.png",
                         "width": "251",
                         "height": "326"
                     },
@@ -776,9 +790,10 @@ const pageData = {
                     "inf_delay": "",
                     "edit_btn_position": 0,
                     "fit_full_screen": 0
-                }, {
+                },
+                    {
                     "animate": ["fadeIn"],
-                    "img": "http://qnm.hunliji.com/o_1br89merk1de11u1o151o18naem2la.jpg",
+                    "img": "./image/page4/peopleImg3.jpg",
                     "delay": ["2500"],
                     "rotate": 0,
                     "x": "61",
@@ -786,7 +801,7 @@ const pageData = {
                     "width": "628",
                     "height": "386",
                     "mask": {
-                        "img": "http://qnm.hunliji.com/o_1br89i3jt1nnj16l31ol01uha99kkr.png",
+                        "img": "./image/peopleImgMask.png",
                         "width": "628",
                         "height": "386"
                     },
@@ -801,7 +816,8 @@ const pageData = {
                     "inf_delay": "",
                     "edit_btn_position": 0,
                     "fit_full_screen": 0
-                }]
+                }
+                ]
             }
         },
             {
