@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4736585-40b7-4b50-a2f7-1f4ff418224c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/audio/BGM.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/invitationCard/js/pageData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/js/pageData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page1/page1Bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/pageBg.jpg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/invitationCard/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="627">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -29,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31179">
-              <caret line="1669" column="35" selection-start-line="1669" selection-start-column="31" selection-end-line="1669" selection-end-column="35" />
+            <state relative-caret-position="17347">
+              <caret line="941" column="67" selection-start-line="941" selection-start-column="53" selection-end-line="941" selection-end-column="67" />
               <folding>
                 <element signature="n#!!block;n#boot#0" />
               </folding>
@@ -41,32 +44,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/invitationCard/js/pageData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="837" column="35" lean-forward="true" selection-start-line="837" selection-start-column="35" selection-end-line="837" selection-end-column="35" />
+            <state relative-caret-position="190">
+              <caret line="1667" column="81" selection-start-line="1667" selection-start-column="25" selection-end-line="1667" selection-end-column="81" />
               <folding>
-                <element signature="e#53#13277#0" />
-                <element signature="e#77#13260#0" />
-                <element signature="e#13291#18676#0" />
-                <element signature="e#18690#24438#0" />
-                <element signature="e#18833#24414#0" />
-                <element signature="e#18855#19564#0" />
-                <element signature="e#19566#20277#0" />
-                <element signature="e#20279#20989#0" />
-                <element signature="e#20991#21698#0" />
-                <element signature="e#21700#22409#0" />
-                <element signature="e#22411#23412#0" />
-                <element signature="e#24452#30473#0" />
-                <element signature="e#24599#25307#0" />
-                <element signature="e#25309#26016#0" />
-                <element signature="e#26018#26739#0" />
-                <element signature="e#26741#27447#0" />
-                <element signature="e#27449#28448#0" />
-                <element signature="e#28450#29447#0" />
-                <element signature="e#29449#30448#0" />
-                <element signature="e#35938#38545#0" />
-                <element signature="e#38559#44291#0" />
-                <element signature="e#44305#52003#0" />
-                <element signature="e#52017#61618#0" />
+                <element signature="e#39#60799#0" />
+                <element signature="e#13284#18656#0" />
+                <element signature="e#18670#24276#0" />
+                <element signature="e#24290#30159#0" />
+                <element signature="e#24427#25116#0" />
+                <element signature="e#25138#25826#0" />
+                <element signature="e#25848#26548#0" />
+                <element signature="e#26570#27246#0" />
+                <element signature="e#28226#29161#0" />
+                <element signature="e#29183#30117#0" />
+                <element signature="e#30173#35527#0" />
+                <element signature="e#30197#35517#0" />
+                <element signature="e#35541#38095#0" />
+                <element signature="e#38109#43709#0" />
+                <element signature="e#43723#51202#0" />
+                <element signature="e#51216#60789#0" />
               </folding>
             </state>
           </provider>
@@ -78,6 +74,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -92,6 +89,10 @@
       <find>type</find>
       <find>this.getParams</find>
       <find>wx</find>
+      <find>.pn&quot;</find>
+      <find>image/peopleImgMask.pn&quot;</find>
+      <find>http://qnm.hunliji.com/o_1bkdrc3lf1jtje4l18a716qv1iukc.png</find>
+      <find>class=&quot;dwIcon&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -104,8 +105,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/invitationCard/js/data.js" />
-        <option value="$PROJECT_DIR$/src/invitationCard/demo.html" />
+        <option value="$PROJECT_DIR$/src/test.html" />
         <option value="$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js" />
+        <option value="$PROJECT_DIR$/src/invitationCard/demo.html" />
         <option value="$PROJECT_DIR$/src/invitationCard/js/pageData.js" />
       </list>
     </option>
@@ -122,6 +124,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,15 +148,7 @@
               <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="invitationCard" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="invitationCard" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
-              <item name="page3" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
@@ -166,24 +161,19 @@
               <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
-              <item name="uitls" type="462c0819:PsiDirectoryNode" />
+              <item name="audio" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/workspace/operationAdmin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/static/audio" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -192,15 +182,16 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IZAYA\myGit\wedding-commemorate\src\static\images" />
+      <recent name="E:\IZAYA\myGit\wedding-commemorate\src\invitationCard\image" />
+      <recent name="E:\IZAYA\myGit\wedding-commemorate\src\static\images\page1" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IZAYA\myGit\wedding-commemorate\src\invitationCard\js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IZAYA\myGit\wedding-commemorate\src\invitationCard\image" />
-      <recent name="E:\IZAYA\myGit\wedding-commemorate\src\static\images" />
-      <recent name="E:\IZAYA\myGit\wedding-commemorate\src\static\images\page1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -232,11 +223,13 @@
       <workItem from="1565084771745" duration="612000" />
       <workItem from="1565148750210" duration="8143000" />
       <workItem from="1565225987421" duration="6961000" />
+      <workItem from="1565675757389" duration="11556000" />
+      <workItem from="1565688337774" duration="692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28880000" />
+    <option name="totallyTimeSpent" value="41128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -286,51 +279,51 @@
     <entry file="file://$PROJECT_DIR$/src/static/images/pageBg.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/invitationCard/image/page6/peopleImg1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/invitationCard/image/page1/dateImg.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.html" />
+    <entry file="file://$PROJECT_DIR$/src/invitationCard/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31179">
-          <caret line="1669" column="35" selection-start-line="1669" selection-start-column="31" selection-end-line="1669" selection-end-column="35" />
+        <state relative-caret-position="17347">
+          <caret line="941" column="67" selection-start-line="941" selection-start-column="53" selection-end-line="941" selection-end-column="67" />
           <folding>
             <element signature="n#!!block;n#boot#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/invitationCard/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/invitationCard/js/pageData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="837" column="35" lean-forward="true" selection-start-line="837" selection-start-column="35" selection-end-line="837" selection-end-column="35" />
+        <state relative-caret-position="190">
+          <caret line="1667" column="81" selection-start-line="1667" selection-start-column="25" selection-end-line="1667" selection-end-column="81" />
           <folding>
-            <element signature="e#53#13277#0" />
-            <element signature="e#77#13260#0" />
-            <element signature="e#13291#18676#0" />
-            <element signature="e#18690#24438#0" />
-            <element signature="e#18833#24414#0" />
-            <element signature="e#18855#19564#0" />
-            <element signature="e#19566#20277#0" />
-            <element signature="e#20279#20989#0" />
-            <element signature="e#20991#21698#0" />
-            <element signature="e#21700#22409#0" />
-            <element signature="e#22411#23412#0" />
-            <element signature="e#24452#30473#0" />
-            <element signature="e#24599#25307#0" />
-            <element signature="e#25309#26016#0" />
-            <element signature="e#26018#26739#0" />
-            <element signature="e#26741#27447#0" />
-            <element signature="e#27449#28448#0" />
-            <element signature="e#28450#29447#0" />
-            <element signature="e#29449#30448#0" />
-            <element signature="e#35938#38545#0" />
-            <element signature="e#38559#44291#0" />
-            <element signature="e#44305#52003#0" />
-            <element signature="e#52017#61618#0" />
+            <element signature="e#39#60799#0" />
+            <element signature="e#13284#18656#0" />
+            <element signature="e#18670#24276#0" />
+            <element signature="e#24290#30159#0" />
+            <element signature="e#24427#25116#0" />
+            <element signature="e#25138#25826#0" />
+            <element signature="e#25848#26548#0" />
+            <element signature="e#26570#27246#0" />
+            <element signature="e#28226#29161#0" />
+            <element signature="e#29183#30117#0" />
+            <element signature="e#30173#35527#0" />
+            <element signature="e#30197#35517#0" />
+            <element signature="e#35541#38095#0" />
+            <element signature="e#38109#43709#0" />
+            <element signature="e#43723#51202#0" />
+            <element signature="e#51216#60789#0" />
           </folding>
         </state>
       </provider>

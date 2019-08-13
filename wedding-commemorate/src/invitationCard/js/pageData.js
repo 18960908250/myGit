@@ -822,15 +822,16 @@ const pageData = {
         },
             {
             "layout": {
-                "background": "http://qnm.hunliji.com/o_1br89nn0h13rc40fehmulg1i22m9.jpg",
-                "elements": [{
+                "background": "../static/images/pageBg.jpg",
+                "elements": [
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["rotateInDownRight"],
                     "delay": ["100ms"],
                     "height": "111",
-                    "img": "http://qnm.hunliji.com/o_1br89rbe6bgr1pb18d11ha71bcjnh.png",
+                    "img": "../static/images/page5/elementImg1.png",
                     "rotate": "",
                     "width": "147",
                     "x": "284",
@@ -841,14 +842,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_0",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeIn"],
                     "delay": ["500ms"],
                     "height": "23",
-                    "img": "http://qnm.hunliji.com/o_1br89rf78k90mb4jibo7p1d81nm.png",
+                    "img": "./image/page5/textImg1.png",
                     "rotate": "",
                     "width": "285",
                     "x": "232",
@@ -859,14 +861,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_1",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["zoomIn"],
                     "delay": ["500ms"],
                     "height": "4",
-                    "img": "http://qnm.hunliji.com/o_1br89riah17is1se0drq1279brtnr.png",
+                    "img": "./image/page5/lineImg1.png",
                     "rotate": "",
                     "width": "112",
                     "x": "319",
@@ -877,14 +880,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_2",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeInLeft"],
                     "delay": ["1500ms"],
                     "height": "177",
-                    "img": "http://qnm.hunliji.com/o_1br89u740ofl5s21438oja17juo0.png",
+                    "img": "../static/images/page5/elementImg2.png",
                     "rotate": "",
                     "width": "158",
                     "x": "-25",
@@ -895,14 +899,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_3",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["zoomIn"],
                     "delay": ["1500ms"],
                     "height": "192",
-                    "img": "http://qnm.hunliji.com/o_1br89u9qh8k61cgp17sicdublnoc.png",
+                    "img": "../static/images/page5/elementImg3.png",
                     "rotate": "",
                     "width": "185",
                     "x": "615",
@@ -913,14 +918,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_4",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeIn"],
                     "delay": ["2000ms"],
                     "height": "72",
-                    "img": "http://qnm.hunliji.com/o_1br89ug1n1uje1p0qalh5ba8dpoo.png",
+                    "img": "./image/page5/textImg2.png",
                     "rotate": "",
                     "width": "300",
                     "x": "225",
@@ -931,9 +937,10 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_5",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "animate": ["fadeInLeft"],
-                    "img": "http://qnm.hunliji.com/o_1br8a3vaa1hgiq62frq11ge9anps.jpg",
+                    "img": "./image/page5/peopleImg1.jpg",
                     "delay": ["1000"],
                     "rotate": 0,
                     "x": "55",
@@ -941,7 +948,7 @@ const pageData = {
                     "width": "640",
                     "height": "516",
                     "mask": {
-                        "img": "http://qnm.hunliji.com/o_1br89uo6l6pkhippvg6v412b4pn.png",
+                        "img": "./image/peopleImgMask.png",
                         "width": "640",
                         "height": "516"
                     },
@@ -956,20 +963,22 @@ const pageData = {
                     "inf_delay": "",
                     "edit_btn_position": 0,
                     "fit_full_screen": 0
-                }]
+                }
+                ]
             }
         },
             {
             "layout": {
-                "background": "http://qnm.hunliji.com/o_1br8a5fi419cnp07cod12gpasnqr.jpg",
-                "elements": [{
+                "background": "../static/images/pageBg.jpg",
+                "elements": [
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeInLeft"],
                     "delay": ["1000ms"],
                     "height": "126",
-                    "img": "http://qnm.hunliji.com/o_1br8a7ucq1rs0ml7si01dtavjpro.png",
+                    "img": "../static/images/page6/elementImg1.png",
                     "rotate": "",
                     "width": "262",
                     "x": "-44",
@@ -980,14 +989,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_0",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["rotateInDownRight"],
                     "delay": ["2000ms"],
                     "height": "190",
-                    "img": "http://qnm.hunliji.com/o_1br8a80nm1b831sda1bhh3t81j28rt.png",
+                    "img": "../static/images/page6/elementImg2.png",
                     "rotate": "",
                     "width": "152",
                     "x": "526",
@@ -998,9 +1008,10 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_1",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "animate": ["fadeInDown"],
-                    "img": "http://qnm.hunliji.com/o_1br8aai741m9kmmcqvfmun1kggsl.jpg",
+                    "img": "./image/page6/peopleImg1.jpg",
                     "delay": ["100"],
                     "rotate": 0,
                     "x": "61",
@@ -1008,7 +1019,7 @@ const pageData = {
                     "width": "628",
                     "height": "1066",
                     "mask": {
-                        "img": "http://qnm.hunliji.com/o_1br8a9sqq66j1cciqsj1cd0353sg.png",
+                        "img": "./image/peopleImgMask.png",
                         "width": "628",
                         "height": "1066"
                     },
@@ -1023,20 +1034,22 @@ const pageData = {
                     "inf_delay": "",
                     "edit_btn_position": 0,
                     "fit_full_screen": 0
-                }]
+                }
+                ]
             }
         },
             {
             "layout": {
-                "background": "http://qnm.hunliji.com/o_1br8abtjt1npl59j5it18412vitk.jpg",
-                "elements": [{
+                "background": "../static/images/pageBg.jpg",
+                "elements": [
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeIn"],
                     "delay": ["1000ms"],
                     "height": "115",
-                    "img": "http://qnm.hunliji.com/o_1br8acdos6nt1o40l521pu21voev1.png",
+                    "img": "../static/images/page7/elementImg1.png",
                     "rotate": "",
                     "width": "134",
                     "x": "19",
@@ -1047,14 +1060,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_0",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["rotateInDownRight"],
                     "delay": ["1500ms"],
                     "height": "248",
-                    "img": "http://qnm.hunliji.com/o_1br8acfui5rpbot171215f11gf3v6.png",
+                    "img": "../static/images/page7/elementImg2.png",
                     "rotate": "",
                     "width": "226",
                     "x": "452",
@@ -1065,14 +1079,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_1",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["zoomIn"],
                     "delay": ["1000ms"],
                     "height": "4",
-                    "img": "http://qnm.hunliji.com/o_1br8acigkubt1eg240m1fb4ismvb.png",
+                    "img": "./image/page7/lineImg1.png",
                     "rotate": "",
                     "width": "88",
                     "x": "87",
@@ -1083,14 +1098,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_2",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeInUp"],
                     "delay": ["1500ms"],
                     "height": "26",
-                    "img": "http://qnm.hunliji.com/o_1br8aclb71ti88nmhe91fno1qr4vg.png",
+                    "img": "./image/page7/textImg1.png",
                     "rotate": "",
                     "width": "296",
                     "x": "85",
@@ -1101,14 +1117,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_3",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeInUp"],
                     "delay": ["2000ms"],
                     "height": "30",
-                    "img": "http://qnm.hunliji.com/o_1br8acodlln21nji4g54j51ac6vl.png",
+                    "img": "./image/page7/textImg2.png",
                     "rotate": "",
                     "width": "117",
                     "x": "87",
@@ -1119,9 +1136,10 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_4",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "animate": ["fadeInLeft"],
-                    "img": "http://qnm.hunliji.com/o_1br8aisljrn51a72cl3vf31suh117.jpg",
+                    "img": "./image/page7/peopleImg1.jpg",
                     "delay": ["100"],
                     "rotate": 0,
                     "x": "61",
@@ -1129,7 +1147,7 @@ const pageData = {
                     "width": "628",
                     "height": "389",
                     "mask": {
-                        "img": "http://qnm.hunliji.com/o_1br8ah3c017t0p5416admkc1jng10f.png",
+                        "img": "./image/peopleImgMask.png",
                         "width": "628",
                         "height": "389"
                     },
@@ -1144,9 +1162,10 @@ const pageData = {
                     "inf_delay": "",
                     "edit_btn_position": 0,
                     "fit_full_screen": 0
-                }, {
+                },
+                    {
                     "animate": ["fadeInRight"],
-                    "img": "http://qnm.hunliji.com/o_1br8aiuor12n2133214sog84l6i11c.jpg",
+                    "img": "./image/page7/peopleImg2.jpg",
                     "delay": ["100"],
                     "rotate": 0,
                     "x": "61",
@@ -1154,7 +1173,7 @@ const pageData = {
                     "width": "628",
                     "height": "389",
                     "mask": {
-                        "img": "http://qnm.hunliji.com/o_1br8ah6nb9i89q61fojcr25n112.png",
+                        "img": "./image/peopleImgMask.png",
                         "width": "628",
                         "height": "389"
                     },
@@ -1169,20 +1188,22 @@ const pageData = {
                     "inf_delay": "",
                     "edit_btn_position": 0,
                     "fit_full_screen": 0
-                }]
+                }
+                ]
             }
         },
             {
             "layout": {
-                "background": "http://qnm.hunliji.com/o_1br8al52r1efs65oaqd11mmvk12b.jpg",
-                "elements": [{
+                "background": "../static/images/pageBg.jpg",
+                "elements": [
+                    {
                     "infinite": "",
                     "inf_delay": "",
                     "inf_duration": "",
                     "animate": ["fadeInDown"],
                     "delay": ["3000"],
                     "height": "223",
-                    "img": "http://qnm.hunliji.com/o_1br8ao1db1i39r5c14h91d6jvtv13h.png",
+                    "img": "../static/images/page8/elementImg1.png",
                     "rotate": "",
                     "width": "156",
                     "x": "2",
@@ -1193,14 +1214,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_0",
                     "line_spacing": ""
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "",
                     "inf_duration": "",
                     "animate": ["rotateInDownRight"],
                     "delay": ["2000"],
                     "height": "195",
-                    "img": "http://qnm.hunliji.com/o_1br8apoq1pcn1j1312ri1gtiuqt13m.png",
+                    "img": "../static/images/page8/elementImg2.png",
                     "rotate": "",
                     "width": "180",
                     "x": "600",
@@ -1211,14 +1233,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_1",
                     "line_spacing": ""
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "",
                     "inf_duration": "",
                     "animate": ["fadeIn"],
                     "delay": ["2000"],
                     "height": "23",
-                    "img": "http://qnm.hunliji.com/o_1bu7nppaj1seg1m1acm1u097qg3i.png",
+                    "img": "./image/page8/textImg1.png",
                     "rotate": "",
                     "width": "238",
                     "x": "256",
@@ -1229,14 +1252,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_2",
                     "line_spacing": ""
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "",
                     "inf_duration": "",
                     "animate": ["fadeIn"],
                     "delay": ["2500"],
                     "height": "64",
-                    "img": "http://qnm.hunliji.com/o_1br8aq9ktra3875gl11b4m10n140.png",
+                    "img": "./image/page8/textImg2.png",
                     "rotate": "",
                     "width": "267",
                     "x": "241",
@@ -1247,14 +1271,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_3",
                     "line_spacing": ""
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "",
                     "inf_duration": "",
                     "animate": ["fadeIn"],
                     "delay": ["2500"],
                     "height": "86",
-                    "img": "http://qnm.hunliji.com/o_1br8aqdf0dg9011kea17m21bhb14c.png",
+                    "img": "./image/page8/lineImg1.png",
                     "rotate": "",
                     "width": "371",
                     "x": "190",
@@ -1265,9 +1290,10 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_4",
                     "line_spacing": ""
-                }, {
+                },
+                    {
                     "animate": ["fadeInDown"],
-                    "img": "http://qnm.hunliji.com/o_1br8b4a0512o21ha5f7k5p2nq16t.jpg",
+                    "img": "./image/page8/peopleImg1.jpg",
                     "delay": ["2500"],
                     "rotate": 0,
                     "x": "61",
@@ -1275,7 +1301,7 @@ const pageData = {
                     "width": "314",
                     "height": "438",
                     "mask": {
-                        "img": "http://qnm.hunliji.com/o_1br8b1ur1lrn1ck71r0vuqu1ivh169.png",
+                        "img": "./image/peopleImgMask.png",
                         "width": "314",
                         "height": "438"
                     },
@@ -1290,9 +1316,10 @@ const pageData = {
                     "inf_delay": "",
                     "edit_btn_position": 0,
                     "fit_full_screen": 0
-                }, {
+                },
+                    {
                     "animate": ["fadeInLeft"],
-                    "img": "http://qnm.hunliji.com/o_1br8b4cil152311kaso82k895o172.jpg",
+                    "img": "./image/page8/peopleImg2.jpg",
                     "delay": ["2000"],
                     "rotate": 0,
                     "x": "375",
@@ -1300,7 +1327,7 @@ const pageData = {
                     "width": "314",
                     "height": "438",
                     "mask": {
-                        "img": "http://qnm.hunliji.com/o_1br8b216417lp149rhe61edgmcl16e.png",
+                        "img": "./image/peopleImgMask.png",
                         "width": "314",
                         "height": "438"
                     },
@@ -1315,9 +1342,10 @@ const pageData = {
                     "inf_delay": "",
                     "edit_btn_position": 0,
                     "fit_full_screen": 0
-                }, {
+                },
+                    {
                     "animate": ["fadeInRight"],
-                    "img": "http://qnm.hunliji.com/o_1br8b4fgm12nns4m1jpa16vva2l177.jpg",
+                    "img": "./image/page8/peopleImg3.jpg",
                     "delay": ["100"],
                     "rotate": 0,
                     "x": "61",
@@ -1325,7 +1353,7 @@ const pageData = {
                     "width": "314",
                     "height": "438",
                     "mask": {
-                        "img": "http://qnm.hunliji.com/o_1br8b23dqvpqislc4257169l16j.png",
+                        "img": "./image/peopleImgMask.png",
                         "width": "314",
                         "height": "438"
                     },
@@ -1340,9 +1368,10 @@ const pageData = {
                     "inf_delay": "",
                     "edit_btn_position": 0,
                     "fit_full_screen": 0
-                }, {
+                },
+                    {
                     "animate": ["fadeInDown"],
-                    "img": "http://qnm.hunliji.com/o_1br8b4hq71bnb29taks5etatb17c.jpg",
+                    "img": "./image/page8/peopleImg4.jpg",
                     "delay": ["1500"],
                     "rotate": 0,
                     "x": "375",
@@ -1350,7 +1379,7 @@ const pageData = {
                     "width": "314",
                     "height": "438",
                     "mask": {
-                        "img": "http://qnm.hunliji.com/o_1br8b25l01t4gt1ekl116uuh4916o.png",
+                        "img": "./image/peopleImgMask.png",
                         "width": "314",
                         "height": "438"
                     },
@@ -1365,20 +1394,22 @@ const pageData = {
                     "inf_delay": "",
                     "edit_btn_position": 0,
                     "fit_full_screen": 0
-                }]
+                }
+                ]
             }
         },
             {
             "layout": {
-                "background": "http://qnm.hunliji.com/o_1br8bn51fk8c1e5oqbfuhi55l18b.jpg",
-                "elements": [{
+                "background": "../static/images/pageBg.jpg",
+                "elements": [
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["rotateInDownRight"],
                     "delay": ["500ms"],
                     "height": "225",
-                    "img": "http://qnm.hunliji.com/o_1br8bnltk1gde1d5416sifshh5o19o.png",
+                    "img": "../static/images/page9/elementImg1.png",
                     "rotate": "",
                     "width": "149",
                     "x": "64",
@@ -1389,14 +1420,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_0",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeInUp"],
                     "delay": ["500ms"],
                     "height": "151",
-                    "img": "http://qnm.hunliji.com/o_1br8bnoi31of2q9nehcl3u10nl19t.png",
+                    "img": "../static/images/page9/elementImg2.png",
                     "rotate": "",
                     "width": "197",
                     "x": "202",
@@ -1407,14 +1439,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_1",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["rotateInDownLeft"],
                     "delay": ["500ms"],
                     "height": "232",
-                    "img": "http://qnm.hunliji.com/o_1br8bnrao11qhq0b1bah735djm1a2.png",
+                        "img": "../static/images/page9/elementImg3.png",
                     "rotate": "",
                     "width": "256",
                     "x": "420",
@@ -1425,14 +1458,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_2",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["zoomIn"],
                     "delay": ["500ms"],
                     "height": "207",
-                    "img": "http://qnm.hunliji.com/o_1br8bntu697k1sqt1hl2fcu1qb31a7.png",
+                    "img": "../static/images/page9/elementImg4.png",
                     "rotate": "",
                     "width": "271",
                     "x": "91",
@@ -1443,14 +1477,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_3",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["zoomIn"],
                     "delay": ["500ms"],
                     "height": "51",
-                    "img": "http://qnm.hunliji.com/o_1br8bo0is1j771lhm11cv1ucc5km1ac.png",
+                    "img": "../static/images/page9/elementImg5.png",
                     "rotate": "",
                     "width": "83",
                     "x": "387",
@@ -1461,14 +1496,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_4",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeInDown"],
                     "delay": ["500ms"],
                     "height": "178",
-                    "img": "http://qnm.hunliji.com/o_1br8bo3u82en1o6t1geqpnq1mrp1ao.png",
+                    "img": "../static/images/page9/elementImg6.png",
                     "rotate": "",
                     "width": "182",
                     "x": "481",
@@ -1479,14 +1515,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_5",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeIn"],
                     "delay": ["100ms"],
                     "height": "817",
-                    "img": "http://qnm.hunliji.com/o_1br8boejt8sl1qqn2it85vqc21bb.png",
+                    "img": "../static/images/page9/pageBg.png",
                     "rotate": "",
                     "width": "561",
                     "x": "95",
@@ -1497,14 +1534,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_6",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeIn"],
                     "delay": ["100ms"],
                     "height": "817",
-                    "img": "http://qnm.hunliji.com/o_1br8boh321ea1rdiq131jad1jdt1bg.png",
+                    "img": "../static/images/page9/pageBgBorder.png",
                     "rotate": "",
                     "width": "561",
                     "x": "95",
@@ -1515,14 +1553,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_7",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["fadeIn"],
                     "delay": ["500ms"],
                     "height": "80",
-                    "img": "http://qnm.hunliji.com/o_1br8bol6t3gf8a145vn69eim1bs.png",
+                    "img": "./image/page9/textImg1.png",
                     "rotate": "",
                     "width": "354",
                     "x": "208",
@@ -1533,14 +1572,15 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_8",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "infinite": "",
                     "inf_delay": "ms",
                     "inf_duration": "ms",
                     "animate": ["zoomIn"],
                     "delay": ["500ms"],
                     "height": "4",
-                    "img": "http://qnm.hunliji.com/o_1br8boq89e7d17gn57h17e52vl1c8.png",
+                    "img": "./image/page9/lineImg1.png",
                     "rotate": "",
                     "width": "70",
                     "x": "340",
@@ -1551,9 +1591,10 @@ const pageData = {
                     "is_scale": "0",
                     "id": "ele_9",
                     "line_spacing": null
-                }, {
+                },
+                    {
                     "animate": ["fadeIn"],
-                    "img": "http://qnm.hunliji.com/Fm3o7h7IclkJWWQjrpZilE599aAi",
+                    "img": "./image/page1/dateImg.png",
                     "delay": ["1500"],
                     "rotate": "0",
                     "x": "191",
@@ -1571,9 +1612,10 @@ const pageData = {
                     "inf_delay": "",
                     "text_type": "time",
                     "edit_btn_position": 0
-                }, {
+                },
+                    {
                     "animate": ["fadeIn"],
-                    "img": "http://qnm.hunliji.com/FnW9CUqrzXUR8Q2a9tbRELuGV3fw",
+                    "img": "./image/page1/addressImg.png",
                     "delay": ["2000"],
                     "rotate": "0",
                     "x": "137",
@@ -1591,7 +1633,8 @@ const pageData = {
                     "inf_delay": "",
                     "text_type": "location",
                     "edit_btn_position": 0
-                }, {
+                },
+                    {
                     "animate": ["fadeIn"],
                     "delay": ["1000"],
                     "x": "120",
@@ -1608,18 +1651,19 @@ const pageData = {
                     "inf_duration": "",
                     "inf_delay": "",
                     "edit_btn_position": 0
-                }],
+                }
+                ],
                 "layTemplate": "layTemplate_feedback",
                 "attendButton": {"textColor": "#ffffff", "fillColor": "#2d86af", "boxColor": "#2d86af"}
             }
         }
         ],
     "music": {
-        "audio": "http://qnvideo.hunliji.com/o_1bs08l4p6qohmjtupi66b10bd9.mp3",
-        "img": "http://qnm.hunliji.com/o_1br8kc0amgei16441m8bnckahru.png",
-        "close_img": "http://qnm.hunliji.com/o_1br8kc3teajn609b0peckg5g13.png"
+        "audio": "../static/BGM.mp3",
+        "img": "../static/images/audio/music.png",
+        "close_img": "../static/images/audio/music.png"
     },
     "page_icon": "",
-    "background_path": "https://qnm.hunliji.com/o_1d5mf66m1femghpcrs5dds5i13.jpg",
-    "theme_background": "https://qnm.hunliji.com/o_1d5mf66m1femghpcrs5dds5i13.jpg"
+    "background_path": "../static/images/BGPath.jpg",
+    "theme_background": "../static/images/BGPath.jpg"
 }

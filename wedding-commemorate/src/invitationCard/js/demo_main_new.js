@@ -892,9 +892,9 @@ boot.prototype = function () {
             if (!a.img) {
               a.img = ""
             }
-            $this.addStyle(obj, animateName)
+            $this.addStyle(obj, animateName) // <img class="dwIcon" src="http://qnm.hunliji.com/o_1blaaggv063m34kok21s8k1irnc.png">
             _ele += '<div ' + infFun + ' class="animated ani_' + obj.page_id + '_' + obj.id + '" style="' + style + '">\
-                      ' + (obj.type == 'map' ? '<img class="dwIcon" src="http://qnm.hunliji.com/o_1blaaggv063m34kok21s8k1irnc.png"><div class="navigation" style="position: absolute; width: ' + 100 / $this.UI_WIDTH * $this.width + 'px; height: ' + 56 / $this.UI_WIDTH * $this.width + 'px; right: 0; top:0; background: #7c7c7c; opacity: 0.6; color: white;font-size: ' + 28 / $this.UI_WIDTH * $this.width + 'px;line-height: ' + 56 / $this.UI_WIDTH * $this.width + 'px; text-align: center; border-bottom-left-radius: ' + 5 / $this.UI_WIDTH * $this.width + 'px;">导航</div>' : '') + '\
+                      ' + (obj.type == 'map' ? '<div class="navigation" style="position: absolute; width: ' + 100 / $this.UI_WIDTH * $this.width + 'px; height: ' + 56 / $this.UI_WIDTH * $this.width + 'px; right: 0; top:0; background: #7c7c7c; opacity: 0.6; color: white;font-size: ' + 28 / $this.UI_WIDTH * $this.width + 'px;line-height: ' + 56 / $this.UI_WIDTH * $this.width + 'px; text-align: center; border-bottom-left-radius: ' + 5 / $this.UI_WIDTH * $this.width + 'px;">导航</div>' : '') + '\
                       <img style="' + obj.mask + ';width:' + _width + ';height:' + _height + ';margin-left:-' + _marginLeft + 'px" class="pageImg ' + (obj.type == 'map' ? 'mapSeat' : '') + '" type="' + obj.type + '" page_id="' + obj.page_id + '" id="' + obj.id + '" style="' + bgImg + '" src="' + a.img + '" />\
                   </div>'
           }
@@ -978,7 +978,7 @@ boot.prototype = function () {
     _div.setAttribute('class', 'animated fadeIn');
     _div.style.bottom = obj.b / this.UI_WIDTH * this.width + 'px';
     _div.style.width = obj.w / this.UI_WIDTH * this.width + 'px';
-    var _mapSrc = 'http://qnm.hunliji.com/o_1bkdrc3lf1jtje4l18a716qv1iukc.png';
+    var _mapSrc = '../static/images/map.jpg';
     $this.srcMap = _mapSrc;
     var _addr = ' 和  诚挚邀请';
     $this.mapUrl = '//apis.map.qq.com/tools/poimarker?type=0&marker=coord:' + obj.x + ',' + obj.y + ';coordtype:3;title:杭州婚礼纪;addr:' + _addr + '&key=GMZBZ-ZCD3U-GY3VD-4PJK3-BRTK3-SQFWZ&referer=hunliji'
