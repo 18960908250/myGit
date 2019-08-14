@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4736585-40b7-4b50-a2f7-1f4ff418224c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/audio/BGM.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/invitationCard/js/pageData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/js/pageData.js" afterDir="false" />
@@ -20,10 +20,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/invitationCard/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
+            <state relative-caret-position="513">
               <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
@@ -32,20 +32,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17347">
-              <caret line="941" column="67" selection-start-line="941" selection-start-column="53" selection-end-line="941" selection-end-column="67" />
+            <state relative-caret-position="4997">
+              <caret line="1624" column="10" selection-start-line="1624" selection-start-column="10" selection-end-line="1624" selection-end-column="10" />
               <folding>
-                <element signature="n#!!block;n#boot#0" />
+                <element signature="e#1736#4171#0" />
+                <element signature="e#4208#6234#0" />
+                <element signature="e#6274#6640#0" />
+                <element signature="e#6666#11704#0" />
+                <element signature="e#7654#9368#0" />
+                <element signature="e#11734#12581#0" />
+                <element signature="e#12614#14195#0" />
+                <element signature="e#14225#14704#0" />
+                <element signature="e#14738#15081#0" />
+                <element signature="e#15114#15387#0" />
+                <element signature="e#15423#16630#0" />
+                <element signature="e#16660#17640#0" />
+                <element signature="e#17682#27104#0" />
+                <element signature="e#27135#37768#0" />
+                <element signature="e#37800#40208#0" />
+                <element signature="e#40240#41098#0" />
+                <element signature="e#47631#47668#0" />
+                <element signature="e#47702#48241#0" />
+                <element signature="e#48268#51722#0" />
+                <element signature="e#51752#52572#0" />
+                <element signature="e#52600#52908#0" />
+                <element signature="e#52932#53151#0" />
+                <element signature="e#53178#53286#0" />
+                <element signature="e#53315#58951#0" />
+                <element signature="e#58982#59601#0" />
+                <element signature="e#59648#59895#0" />
+                <element signature="e#59932#60532#0" />
+                <element signature="e#61032#61492#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/invitationCard/js/pageData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="1667" column="81" selection-start-line="1667" selection-start-column="25" selection-end-line="1667" selection-end-column="81" />
+            <state relative-caret-position="209">
+              <caret line="1668" column="1" selection-start-line="1668" selection-start-column="1" selection-end-line="1668" selection-end-column="1" />
               <folding>
                 <element signature="e#39#60799#0" />
                 <element signature="e#13284#18656#0" />
@@ -85,7 +112,6 @@
       <find>pageData</find>
       <find>conso</find>
       <find>res</find>
-      <find>ajax</find>
       <find>type</find>
       <find>this.getParams</find>
       <find>wx</find>
@@ -93,6 +119,8 @@
       <find>image/peopleImgMask.pn&quot;</find>
       <find>http://qnm.hunliji.com/o_1bkdrc3lf1jtje4l18a716qv1iukc.png</find>
       <find>class=&quot;dwIcon&quot;</find>
+      <find>ajax</find>
+      <find>sdk</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -105,14 +133,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/invitationCard/js/data.js" />
+        <option value="$PROJECT_DIR$/src/invitationCard/demo.html" />
         <option value="$PROJECT_DIR$/src/test.html" />
         <option value="$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js" />
-        <option value="$PROJECT_DIR$/src/invitationCard/demo.html" />
         <option value="$PROJECT_DIR$/src/invitationCard/js/pageData.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -125,55 +153,14 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="invitationCard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="invitationCard" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="audio" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/static/audio" />
+    <property name="last_opened_file_path" value="F:/workspace/app-website" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -185,13 +172,14 @@
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IZAYA\myGit\wedding-commemorate\src\static\audio" />
+      <recent name="E:\IZAYA\myGit\wedding-commemorate\src\invitationCard\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IZAYA\myGit\wedding-commemorate\src\static\images" />
       <recent name="E:\IZAYA\myGit\wedding-commemorate\src\invitationCard\image" />
       <recent name="E:\IZAYA\myGit\wedding-commemorate\src\static\images\page1" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IZAYA\myGit\wedding-commemorate\src\invitationCard\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -224,16 +212,16 @@
       <workItem from="1565148750210" duration="8143000" />
       <workItem from="1565225987421" duration="6961000" />
       <workItem from="1565675757389" duration="11556000" />
-      <workItem from="1565688337774" duration="692000" />
+      <workItem from="1565688337774" duration="2381000" />
+      <workItem from="1565744964900" duration="1795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41128000" />
+    <option name="totallyTimeSpent" value="44612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -285,28 +273,54 @@
     <entry file="file://$PROJECT_DIR$/src/invitationCard/image/page1/dateImg.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.html" />
-    <entry file="file://$PROJECT_DIR$/src/invitationCard/demo.html">
+    <entry file="file://$PROJECT_DIR$/src/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="285">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17347">
-          <caret line="941" column="67" selection-start-line="941" selection-start-column="53" selection-end-line="941" selection-end-column="67" />
+        <state relative-caret-position="4997">
+          <caret line="1624" column="10" selection-start-line="1624" selection-start-column="10" selection-end-line="1624" selection-end-column="10" />
           <folding>
-            <element signature="n#!!block;n#boot#0" />
+            <element signature="e#1736#4171#0" />
+            <element signature="e#4208#6234#0" />
+            <element signature="e#6274#6640#0" />
+            <element signature="e#6666#11704#0" />
+            <element signature="e#7654#9368#0" />
+            <element signature="e#11734#12581#0" />
+            <element signature="e#12614#14195#0" />
+            <element signature="e#14225#14704#0" />
+            <element signature="e#14738#15081#0" />
+            <element signature="e#15114#15387#0" />
+            <element signature="e#15423#16630#0" />
+            <element signature="e#16660#17640#0" />
+            <element signature="e#17682#27104#0" />
+            <element signature="e#27135#37768#0" />
+            <element signature="e#37800#40208#0" />
+            <element signature="e#40240#41098#0" />
+            <element signature="e#47631#47668#0" />
+            <element signature="e#47702#48241#0" />
+            <element signature="e#48268#51722#0" />
+            <element signature="e#51752#52572#0" />
+            <element signature="e#52600#52908#0" />
+            <element signature="e#52932#53151#0" />
+            <element signature="e#53178#53286#0" />
+            <element signature="e#53315#58951#0" />
+            <element signature="e#58982#59601#0" />
+            <element signature="e#59648#59895#0" />
+            <element signature="e#59932#60532#0" />
+            <element signature="e#61032#61492#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/invitationCard/js/pageData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="1667" column="81" selection-start-line="1667" selection-start-column="25" selection-end-line="1667" selection-end-column="81" />
+        <state relative-caret-position="209">
+          <caret line="1668" column="1" selection-start-line="1668" selection-start-column="1" selection-end-line="1668" selection-end-column="1" />
           <folding>
             <element signature="e#39#60799#0" />
             <element signature="e#13284#18656#0" />
@@ -325,6 +339,13 @@
             <element signature="e#43723#51202#0" />
             <element signature="e#51216#60789#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/invitationCard/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>

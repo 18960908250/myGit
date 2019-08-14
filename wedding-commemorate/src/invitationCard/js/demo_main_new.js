@@ -1622,6 +1622,7 @@ boot.prototype = function () {
     }
   }
   sdk = function () {
+    return
     var $this = this;
     $.ajax({
       url: 'https://www.hunliji.com/sms/ip',

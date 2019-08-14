@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div"></div>
+<script>
+    window.onload=function () {
+        var oDiv = document.getElementById('div');
+        var id = 'gadfadf'
+        oDiv.innerHTML = '<a onclick="testFun(\''+ id +'\')">click</a>'
+    }
+    function testFun(id){
+        alert(id)
+    }
+</script>
+</body>
+</html>

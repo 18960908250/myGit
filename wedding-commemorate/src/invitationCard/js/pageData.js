@@ -1659,7 +1659,7 @@ const pageData = {
         }
         ],
     "music": {
-        "audio": "../static/BGM.mp3",
+        "audio": "../static/audio/BGM.mp3",
         "img": "../static/images/audio/music.png",
         "close_img": "../static/images/audio/music.png"
     },
