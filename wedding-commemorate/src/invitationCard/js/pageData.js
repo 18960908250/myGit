@@ -1663,7 +1663,7 @@ const pageData = {
         "img": "../static/images/audio/music.png",
         "close_img": "../static/images/audio/music.png"
     },
-    "page_icon": "",
+    "page_icon": "../static/images/upArrow.png",
     "background_path": "../static/images/BGPath.jpg",
     "theme_background": "../static/images/BGPath.jpg"
 }

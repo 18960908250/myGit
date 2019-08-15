@@ -10,7 +10,8 @@ function boot() {
   this.UI_WIDTH = 750; //UI稿尺寸
   this.UI_HEIGHT = 1220; //UI稿尺寸
   this.seating = 0; //当前请帖页
-  this.autoState = false; //是否自动播放
+  // this.autoState = false; //是否自动播放
+  this.autoState = true;
   this.musicStatePause = "false";
   this.log = []; //editIcon参数
   this.videoNext = false; //视频存在
@@ -106,7 +107,6 @@ boot.prototype = function () {
     testFun()
     function testFun(){
         $this.result = pageData;
-
         $this.musicOpen = $this.result.music.img || '//qnm.hunliji.com/o_1bi67lq091qtt1gfs60cpadqjj7.png';
         $this.musicClose = $this.result.music.close_img || '//qnm.hunliji.com/o_1bi67m2q63tilg81vh1q3v10g6c.png';
         $this.pageIcon = $this.result.page_icon || '//qnm.hunliji.com/o_1agpam0fsibn2814j110101jcr7.png';
@@ -240,7 +240,7 @@ boot.prototype = function () {
         }
       }, 300)
     })
-    this.allImg(this.result)
+    // this.allImg(this.result)
     var preview = $this.getParams('preview')
     var weapp_preview = $this.getParams('weapp_preview')
     if (preview) {
@@ -308,6 +308,14 @@ boot.prototype = function () {
       }
       location.href = $this.mapUrl
     })
+    function setAutoPlay() {
+      var autoTime = null
+      clearTimeout(autoTime)
+      autoTime = setTimeout(function () {
+        $this.autoPlayPage().call($this)
+      },7000)
+    }
+    // setAutoPlay()
     this.get_infinite()
   }
   get_infinite = function () {
@@ -1332,9 +1340,9 @@ boot.prototype = function () {
         $('#upImg').show()
       }
       clearTimeout(ts)
-      return false
     } else {
       $('#upImg').hide()
+      return false
     }
     $('#video').parent().removeClass('vhave');
     if (n < $this.result.page.length - 1) {
