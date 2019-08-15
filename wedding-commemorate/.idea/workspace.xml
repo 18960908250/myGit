@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/invitationCard/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/demo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/js/pageData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/js/pageData.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/invitationCard/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+            <state relative-caret-position="38">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -30,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="318" column="23" lean-forward="true" selection-start-line="318" selection-start-column="23" selection-end-line="318" selection-end-column="23" />
+            <state relative-caret-position="185">
+              <caret line="983" column="25" lean-forward="true" selection-start-line="983" selection-start-column="25" selection-end-line="983" selection-end-column="25" />
               <folding>
                 <element signature="e#1736#4171#0" />
                 <element signature="e#4208#6234#0" />
@@ -45,7 +44,6 @@
                 <element signature="e#15423#16630#0" />
                 <element signature="e#16660#17640#0" />
                 <element signature="e#17682#27104#0" />
-                <element signature="e#27135#37768#0" />
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
@@ -57,7 +55,6 @@
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="e#37800#40208#0" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="e#40240#41098#0" />
                 <element signature="e#41127#47598#0" />
@@ -65,6 +62,7 @@
                 <element signature="e#47631#47668#0" />
                 <element signature="e#47702#48241#0" />
                 <element signature="e#48268#51722#0" />
+                <element signature="e#51752#52572#0" />
                 <element signature="e#52600#52908#0" />
                 <element signature="e#52932#53151#0" />
                 <element signature="e#53178#53286#0" />
@@ -72,7 +70,12 @@
                 <element signature="e#58982#59601#0" />
                 <element signature="e#59648#59895#0" />
                 <element signature="e#59932#60532#0" />
+                <element signature="e#60576#61007#0" />
                 <element signature="e#61032#61492#0" />
+                <element signature="e#61513#61998#0" />
+                <element signature="e#62036#62541#0" />
+                <element signature="e#62566#63169#0" />
+                <element signature="e#63199#63523#0" />
               </folding>
             </state>
           </provider>
@@ -81,10 +84,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/invitationCard/js/pageData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="1668" column="1" lean-forward="true" selection-start-line="1668" selection-start-column="1" selection-end-line="1668" selection-end-column="1" />
+            <state relative-caret-position="291">
+              <caret line="1645" column="32" selection-start-line="1645" selection-start-column="32" selection-end-line="1645" selection-end-column="32" />
               <folding>
-                <element signature="e#39#60799#0" />
+                <element signature="e#53#13270#0" />
                 <element signature="e#13284#18656#0" />
                 <element signature="e#18670#24276#0" />
                 <element signature="e#24290#30159#0" />
@@ -99,7 +102,6 @@
                 <element signature="e#35541#38095#0" />
                 <element signature="e#38109#43709#0" />
                 <element signature="e#43723#51202#0" />
-                <element signature="e#51216#60789#0" />
               </folding>
             </state>
           </provider>
@@ -122,7 +124,6 @@
       <find>pageData</find>
       <find>conso</find>
       <find>res</find>
-      <find>type</find>
       <find>this.getParams</find>
       <find>wx</find>
       <find>.pn&quot;</find>
@@ -135,8 +136,13 @@
       <find>o_1bid6p3ojgs8uptnu919pd5os7.png</find>
       <find>o_1c1mmtbvm1ne71b46vpl13ga2gs8.png</find>
       <find>deb</find>
-      <find>editState</find>
       <find>autoPlayPage</find>
+      <find>ts</find>
+      <find>editState</find>
+      <find>navigation</find>
+      <find>导航</find>
+      <find>type</find>
+      <find>mapUrl</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -258,12 +264,12 @@
       <workItem from="1565675757389" duration="11556000" />
       <workItem from="1565688337774" duration="2381000" />
       <workItem from="1565744964900" duration="1798000" />
-      <workItem from="1565831105954" duration="2477000" />
+      <workItem from="1565831105954" duration="5787000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47092000" />
+    <option name="totallyTimeSpent" value="50402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -290,6 +296,24 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js</url>
+          <line>1697</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js</url>
+          <line>993</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/invitationCard/js/data.js">
@@ -328,17 +352,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/invitationCard/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+        <state relative-caret-position="38">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/invitationCard/js/pageData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="1668" column="1" lean-forward="true" selection-start-line="1668" selection-start-column="1" selection-end-line="1668" selection-end-column="1" />
+        <state relative-caret-position="291">
+          <caret line="1645" column="32" selection-start-line="1645" selection-start-column="32" selection-end-line="1645" selection-end-column="32" />
           <folding>
-            <element signature="e#39#60799#0" />
+            <element signature="e#53#13270#0" />
             <element signature="e#13284#18656#0" />
             <element signature="e#18670#24276#0" />
             <element signature="e#24290#30159#0" />
@@ -353,15 +377,14 @@
             <element signature="e#35541#38095#0" />
             <element signature="e#38109#43709#0" />
             <element signature="e#43723#51202#0" />
-            <element signature="e#51216#60789#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="318" column="23" lean-forward="true" selection-start-line="318" selection-start-column="23" selection-end-line="318" selection-end-column="23" />
+        <state relative-caret-position="185">
+          <caret line="983" column="25" lean-forward="true" selection-start-line="983" selection-start-column="25" selection-end-line="983" selection-end-column="25" />
           <folding>
             <element signature="e#1736#4171#0" />
             <element signature="e#4208#6234#0" />
@@ -375,7 +398,6 @@
             <element signature="e#15423#16630#0" />
             <element signature="e#16660#17640#0" />
             <element signature="e#17682#27104#0" />
-            <element signature="e#27135#37768#0" />
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
@@ -387,7 +409,6 @@
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="e#37800#40208#0" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="e#40240#41098#0" />
             <element signature="e#41127#47598#0" />
@@ -395,6 +416,7 @@
             <element signature="e#47631#47668#0" />
             <element signature="e#47702#48241#0" />
             <element signature="e#48268#51722#0" />
+            <element signature="e#51752#52572#0" />
             <element signature="e#52600#52908#0" />
             <element signature="e#52932#53151#0" />
             <element signature="e#53178#53286#0" />
@@ -402,7 +424,12 @@
             <element signature="e#58982#59601#0" />
             <element signature="e#59648#59895#0" />
             <element signature="e#59932#60532#0" />
+            <element signature="e#60576#61007#0" />
             <element signature="e#61032#61492#0" />
+            <element signature="e#61513#61998#0" />
+            <element signature="e#62036#62541#0" />
+            <element signature="e#62566#63169#0" />
+            <element signature="e#63199#63523#0" />
           </folding>
         </state>
       </provider>

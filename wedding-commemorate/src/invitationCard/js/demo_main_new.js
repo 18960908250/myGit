@@ -297,7 +297,7 @@ boot.prototype = function () {
       location.reload()
     })
     $(document).on('touchstart', '.navigation', function () {
-      if ($this.type) {
+      if (!$this.type) {
         return false
       }
       location.href = $this.mapUrl
@@ -981,6 +981,8 @@ boot.prototype = function () {
     obj.w = 686;
     obj.h = 386;
     obj.b = 132;
+    obj.x = 26.0567000000
+    obj.y = 119.3370500000
     var _div = document.createElement('div');
     _div.setAttribute('id', 'map');
     _div.setAttribute('class', 'animated fadeIn');
@@ -988,8 +990,8 @@ boot.prototype = function () {
     _div.style.width = obj.w / this.UI_WIDTH * this.width + 'px';
     var _mapSrc = '../static/images/map.jpg';
     $this.srcMap = _mapSrc;
-    var _addr = ' 和  诚挚邀请';
-    $this.mapUrl = '//apis.map.qq.com/tools/poimarker?type=0&marker=coord:' + obj.x + ',' + obj.y + ';coordtype:3;title:杭州婚礼纪;addr:' + _addr + '&key=GMZBZ-ZCD3U-GY3VD-4PJK3-BRTK3-SQFWZ&referer=hunliji'
+    var _addr = '程楠 和 陈真真 诚挚邀请';
+    $this.mapUrl = '//apis.map.qq.com/tools/poimarker?type=0&marker=coord:' + obj.x + ',' + obj.y + ';coordtype:3;title:特意给你加了个导航怕你不认路;addr:' + _addr + '&key=GMZBZ-ZCD3U-GY3VD-4PJK3-BRTK3-SQFWZ&referer=hunliji'
     var _animateIcon = document.createElement('div');
     _animateIcon.setAttribute('id', 'updownIcon');
     _animateIcon.style.bottom = (160 / this.UI_WIDTH * this.width + 34) + 'px';
