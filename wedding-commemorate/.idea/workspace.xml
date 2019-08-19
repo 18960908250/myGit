@@ -2,92 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4736585-40b7-4b50-a2f7-1f4ff418224c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/invitationCard/js/flowerLanguageData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/audio/BGM-I_like.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page1/addressImg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page1/addressImg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page1/dateImg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page1/dateImg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page1/menNameImg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page1/menNameImg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page1/titleTextImg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page1/titleTextImg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page1/titleTextImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page1/titleTextImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page1/womenNameImg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page1/womenNameImg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page2/lineImg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page2/lineImg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page2/peopleImg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page2/peopleImg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page2/textImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page2/textImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page2/textImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page2/textImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page3/peopleImg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page3/peopleImg1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page3/peopleImg2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page3/peopleImg2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page3/textImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page3/textImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page3/textImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page3/textImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page4/peopleImg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page4/peopleImg1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page4/peopleImg2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page4/peopleImg2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page4/peopleImg3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page4/peopleImg3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page4/textImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page4/textImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page5/lineImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page5/lineImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page5/peopleImg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page5/peopleImg1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page5/textImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page5/textImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page5/textImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page5/textImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page6/peopleImg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page6/peopleImg1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page7/lineImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page7/lineImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page7/peopleImg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page7/peopleImg1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page7/peopleImg2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page7/peopleImg2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page7/textImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page7/textImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page7/textImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page7/textImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page8/lineImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page8/lineImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page8/peopleImg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page8/peopleImg1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page8/peopleImg2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page8/peopleImg2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page8/peopleImg3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page8/peopleImg3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page8/peopleImg4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page8/peopleImg4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page8/textImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page8/textImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page8/textImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page8/textImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page9/addressImg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page9/addressImg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page9/dateImg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page9/dateImg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page9/lineImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page9/lineImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/page9/textImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page9/textImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/image/peopleImgMask.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/peopleImgMask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/js/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/js/pageData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/js/pageData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/map.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page1/elementImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page1/elementImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page1/elementImg10.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page1/elementImg10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page1/elementImg11.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page1/elementImg11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page1/elementImg12.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page1/elementImg12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page1/elementImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page1/elementImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page1/elementImg3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page1/elementImg3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page1/elementImg4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page1/elementImg4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page1/elementImg5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page1/elementImg5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page1/elementImg6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page1/elementImg6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page1/elementImg7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page1/elementImg7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page1/elementImg8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page1/elementImg8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page1/elementImg9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page1/elementImg9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page2/elementImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page2/elementImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page2/elementImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page2/elementImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page2/elementImg3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page2/elementImg3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page2/page2Bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page2/page2Bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page3/elementImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page3/elementImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page3/elementImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page3/elementImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page3/elementImg3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page3/elementImg3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page4/elementImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page4/elementImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page4/elementImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page4/elementImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page4/elementImg3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page4/elementImg3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page5/elementImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page5/elementImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page5/elementImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page5/elementImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page5/elementImg3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page5/elementImg3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page6/elementImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page6/elementImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page6/elementImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page6/elementImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page7/elementImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page7/elementImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page7/elementImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page7/elementImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page8/elementImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page8/elementImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page8/elementImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page8/elementImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page9/elementImg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page9/elementImg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page9/elementImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page9/elementImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page9/elementImg3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page9/elementImg3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page9/elementImg4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page9/elementImg4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page9/elementImg5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page9/elementImg5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page9/elementImg6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page9/elementImg6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page9/pageBg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page9/pageBg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/page9/pageBgBorder.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/defauleLanguageImg/page9/pageBgBorder.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/invitationCard/js/flowerLanguageData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/js/flowerLanguageData.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -109,15 +27,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/invitationCard/js/flowerLanguageData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="994" column="80" selection-start-line="994" selection-start-column="80" selection-end-line="994" selection-end-column="80" />
+            <state relative-caret-position="361">
+              <caret line="2100" column="1" lean-forward="true" selection-start-line="2100" selection-start-column="1" selection-end-line="2100" selection-end-column="1" />
               <folding>
                 <element signature="e#41#20295#0" />
-                <element signature="e#65#20285#0" />
-                <element signature="e#178#942#0" />
                 <element signature="e#964#1737#0" />
                 <element signature="e#1759#2532#0" />
                 <element signature="e#2554#3327#0" />
@@ -162,40 +78,97 @@
                 <element signature="e#35496#36262#0" />
                 <element signature="e#36284#37052#0" />
                 <element signature="e#37074#37841#0" />
-                <element signature="e#39133#39835#0" />
-                <element signature="e#39858#40560#0" />
-                <element signature="e#41312#42022#0" />
-                <element signature="e#42045#42744#0" />
-                <element signature="e#42767#43460#0" />
-                <element signature="e#43483#44184#0" />
-                <element signature="e#44206#44908#0" />
-                <element signature="e#44931#45631#0" />
-                <element signature="e#45654#46357#0" />
-                <element signature="e#46380#47080#0" />
-                <element signature="e#47102#47800#0" />
-                <element signature="e#47823#48587#0" />
-                <element signature="e#48610#49375#0" />
-                <element signature="e#49398#50165#0" />
-                <element signature="e#50187#51189#0" />
-                <element signature="e#51212#52213#0" />
-                <element signature="e#52236#53238#0" />
-                <element signature="e#53290#59435#0" />
-                <element signature="e#59445#67283#0" />
-                <element signature="e#67293#71336#0" />
-                <element signature="e#71346#81530#0" />
+                <element signature="e#38996#54597#0" />
+                <element signature="e#39133#39904#0" />
+                <element signature="e#39926#40698#0" />
+                <element signature="e#40720#41495#0" />
+                <element signature="e#41517#42298#0" />
+                <element signature="e#42320#43088#0" />
+                <element signature="e#43110#43876#0" />
+                <element signature="e#43898#44670#0" />
+                <element signature="e#44692#45462#0" />
+                <element signature="e#45484#46254#0" />
+                <element signature="e#46276#47049#0" />
+                <element signature="e#47071#47842#0" />
+                <element signature="e#47864#48633#0" />
+                <element signature="e#48655#49501#0" />
+                <element signature="e#49523#50370#0" />
+                <element signature="e#50392#51241#0" />
+                <element signature="e#51263#52346#0" />
+                <element signature="e#52368#53450#0" />
+                <element signature="e#53472#54555#0" />
+                <element signature="e#54607#61482#0" />
+                <element signature="e#54744#55517#0" />
+                <element signature="e#55539#56307#0" />
+                <element signature="e#56329#57097#0" />
+                <element signature="e#57119#57885#0" />
+                <element signature="e#57907#58679#0" />
+                <element signature="e#58701#59469#0" />
+                <element signature="e#59491#60339#0" />
+                <element signature="e#60361#61440#0" />
+                <element signature="e#61492#70249#0" />
+                <element signature="e#61629#62394#0" />
+                <element signature="e#62416#63181#0" />
+                <element signature="e#63203#63971#0" />
+                <element signature="e#63993#64759#0" />
+                <element signature="e#64781#65547#0" />
+                <element signature="e#65569#66337#0" />
+                <element signature="e#66359#67130#0" />
+                <element signature="e#67152#68002#0" />
+                <element signature="e#68024#69103#0" />
+                <element signature="e#69125#70207#0" />
+                <element signature="e#70259#74767#0" />
+                <element signature="e#70396#71167#0" />
+                <element signature="e#71189#71961#0" />
+                <element signature="e#71983#72754#0" />
+                <element signature="e#72776#73623#0" />
+                <element signature="e#73645#74725#0" />
+                <element signature="e#74777#85236#0" />
+                <element signature="e#74914#75612#0" />
+                <element signature="e#75635#76331#0" />
+                <element signature="e#76353#77051#0" />
+                <element signature="e#77073#77768#0" />
+                <element signature="e#77791#78488#0" />
+                <element signature="e#78511#79209#0" />
+                <element signature="e#79232#79929#0" />
+                <element signature="e#79952#80648#0" />
+                <element signature="e#80671#81369#0" />
+                <element signature="e#81392#82090#0" />
+                <element signature="e#82112#82813#0" />
+                <element signature="e#82836#83603#0" />
+                <element signature="e#84420#85034#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/invitationCard/js/pageData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="1665" column="14" selection-start-line="1665" selection-start-column="5" selection-end-line="1665" selection-end-column="14" />
+              <folding>
+                <element signature="e#53#13618#0" />
+                <element signature="e#13632#19160#0" />
+                <element signature="e#19174#24955#0" />
+                <element signature="e#24969#31032#0" />
+                <element signature="e#31046#36556#0" />
+                <element signature="e#36570#39201#0" />
+                <element signature="e#39215#44991#0" />
+                <element signature="e#45005#52738#0" />
+                <element signature="e#52752#62557#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="106" column="4" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="4" />
+            <state relative-caret-position="413">
+              <caret line="119" column="11" lean-forward="true" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
               <folding>
                 <element signature="e#1771#4194#0" />
-                <element signature="e#4236#6261#0" />
                 <element signature="e#6301#6667#0" />
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
@@ -226,8 +199,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/p/wedding/index.php/Home/APIInvitationV3/previewTemplate</find>
-      <find>pageData</find>
       <find>conso</find>
       <find>res</find>
       <find>this.getParams</find>
@@ -250,16 +221,20 @@
       <find>type</find>
       <find>mapUrl</find>
       <find>导航1</find>
-      <find>template</find>
       <find>./image/</find>
       <find>BGP</find>
       <find>/image</find>
+      <find>o_1bkdpgbnt17ad1ufa1k1vg2016ppu.png</find>
+      <find>template</find>
+      <find>page_icon</find>
+      <find>o_1agpam0fsibn2814j110101jcr7.png</find>
+      <find>/o_1agpam0fsibn2814j110101jcr7.png</find>
     </findStrings>
     <replaceStrings>
-      <replace />
       <replace>./image/defauleLanguageImg/</replace>
       <replace>./image/peopleImgMask.png</replace>
       <replace>/images/</replace>
+      <replace />
       <replace>/images/defauleLanguageImg/peopleImgMask.png</replace>
     </replaceStrings>
   </component>
@@ -272,10 +247,10 @@
         <option value="$PROJECT_DIR$/src/invitationCard/js/data.js" />
         <option value="$PROJECT_DIR$/src/test.html" />
         <option value="$PROJECT_DIR$/src/invitationCard/js/flowerLanguage.js" />
-        <option value="$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js" />
         <option value="$PROJECT_DIR$/src/invitationCard/demo.html" />
         <option value="$PROJECT_DIR$/src/invitationCard/js/pageData.js" />
         <option value="$PROJECT_DIR$/src/invitationCard/js/flowerLanguageData.js" />
+        <option value="$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js" />
       </list>
     </option>
   </component>
@@ -315,21 +290,6 @@
               <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="invitationCard" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="invitationCard" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="flowerLanguageImg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="invitationCard" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -343,6 +303,13 @@
               <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="audio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -352,15 +319,6 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
               <item name="flowerLanguageImg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="flowerLanguageImg" type="462c0819:PsiDirectoryNode" />
-              <item name="page4" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -372,7 +330,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/static/audio" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -431,12 +389,12 @@
       <workItem from="1565831105954" duration="6532000" />
       <workItem from="1565854167753" duration="667000" />
       <workItem from="1565943875634" duration="1369000" />
-      <workItem from="1566175174623" duration="10033000" />
+      <workItem from="1566175174623" duration="14698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63216000" />
+    <option name="totallyTimeSpent" value="67881000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -469,12 +427,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js</url>
-          <line>1697</line>
+          <line>1698</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js</url>
-          <line>993</line>
+          <line>994</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -512,30 +470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="106" column="4" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="4" />
-          <folding>
-            <element signature="e#1771#4194#0" />
-            <element signature="e#4236#6261#0" />
-            <element signature="e#6301#6667#0" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/static/images/BGPath.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -560,19 +494,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/invitationCard/js/pageData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17239">
-          <caret line="1381" column="76" selection-start-line="1381" selection-start-column="76" selection-end-line="1381" selection-end-column="76" />
+        <state relative-caret-position="342">
+          <caret line="1665" column="14" selection-start-line="1665" selection-start-column="5" selection-end-line="1665" selection-end-column="14" />
+          <folding>
+            <element signature="e#53#13618#0" />
+            <element signature="e#13632#19160#0" />
+            <element signature="e#19174#24955#0" />
+            <element signature="e#24969#31032#0" />
+            <element signature="e#31046#36556#0" />
+            <element signature="e#36570#39201#0" />
+            <element signature="e#39215#44991#0" />
+            <element signature="e#45005#52738#0" />
+            <element signature="e#52752#62557#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/invitationCard/js/flowerLanguageData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="994" column="80" selection-start-line="994" selection-start-column="80" selection-end-line="994" selection-end-column="80" />
+        <state relative-caret-position="361">
+          <caret line="2100" column="1" lean-forward="true" selection-start-line="2100" selection-start-column="1" selection-end-line="2100" selection-end-column="1" />
           <folding>
             <element signature="e#41#20295#0" />
-            <element signature="e#65#20285#0" />
-            <element signature="e#178#942#0" />
             <element signature="e#964#1737#0" />
             <element signature="e#1759#2532#0" />
             <element signature="e#2554#3327#0" />
@@ -617,27 +560,88 @@
             <element signature="e#35496#36262#0" />
             <element signature="e#36284#37052#0" />
             <element signature="e#37074#37841#0" />
-            <element signature="e#39133#39835#0" />
-            <element signature="e#39858#40560#0" />
-            <element signature="e#41312#42022#0" />
-            <element signature="e#42045#42744#0" />
-            <element signature="e#42767#43460#0" />
-            <element signature="e#43483#44184#0" />
-            <element signature="e#44206#44908#0" />
-            <element signature="e#44931#45631#0" />
-            <element signature="e#45654#46357#0" />
-            <element signature="e#46380#47080#0" />
-            <element signature="e#47102#47800#0" />
-            <element signature="e#47823#48587#0" />
-            <element signature="e#48610#49375#0" />
-            <element signature="e#49398#50165#0" />
-            <element signature="e#50187#51189#0" />
-            <element signature="e#51212#52213#0" />
-            <element signature="e#52236#53238#0" />
-            <element signature="e#53290#59435#0" />
-            <element signature="e#59445#67283#0" />
-            <element signature="e#67293#71336#0" />
-            <element signature="e#71346#81530#0" />
+            <element signature="e#38996#54597#0" />
+            <element signature="e#39133#39904#0" />
+            <element signature="e#39926#40698#0" />
+            <element signature="e#40720#41495#0" />
+            <element signature="e#41517#42298#0" />
+            <element signature="e#42320#43088#0" />
+            <element signature="e#43110#43876#0" />
+            <element signature="e#43898#44670#0" />
+            <element signature="e#44692#45462#0" />
+            <element signature="e#45484#46254#0" />
+            <element signature="e#46276#47049#0" />
+            <element signature="e#47071#47842#0" />
+            <element signature="e#47864#48633#0" />
+            <element signature="e#48655#49501#0" />
+            <element signature="e#49523#50370#0" />
+            <element signature="e#50392#51241#0" />
+            <element signature="e#51263#52346#0" />
+            <element signature="e#52368#53450#0" />
+            <element signature="e#53472#54555#0" />
+            <element signature="e#54607#61482#0" />
+            <element signature="e#54744#55517#0" />
+            <element signature="e#55539#56307#0" />
+            <element signature="e#56329#57097#0" />
+            <element signature="e#57119#57885#0" />
+            <element signature="e#57907#58679#0" />
+            <element signature="e#58701#59469#0" />
+            <element signature="e#59491#60339#0" />
+            <element signature="e#60361#61440#0" />
+            <element signature="e#61492#70249#0" />
+            <element signature="e#61629#62394#0" />
+            <element signature="e#62416#63181#0" />
+            <element signature="e#63203#63971#0" />
+            <element signature="e#63993#64759#0" />
+            <element signature="e#64781#65547#0" />
+            <element signature="e#65569#66337#0" />
+            <element signature="e#66359#67130#0" />
+            <element signature="e#67152#68002#0" />
+            <element signature="e#68024#69103#0" />
+            <element signature="e#69125#70207#0" />
+            <element signature="e#70259#74767#0" />
+            <element signature="e#70396#71167#0" />
+            <element signature="e#71189#71961#0" />
+            <element signature="e#71983#72754#0" />
+            <element signature="e#72776#73623#0" />
+            <element signature="e#73645#74725#0" />
+            <element signature="e#74777#85236#0" />
+            <element signature="e#74914#75612#0" />
+            <element signature="e#75635#76331#0" />
+            <element signature="e#76353#77051#0" />
+            <element signature="e#77073#77768#0" />
+            <element signature="e#77791#78488#0" />
+            <element signature="e#78511#79209#0" />
+            <element signature="e#79232#79929#0" />
+            <element signature="e#79952#80648#0" />
+            <element signature="e#80671#81369#0" />
+            <element signature="e#81392#82090#0" />
+            <element signature="e#82112#82813#0" />
+            <element signature="e#82836#83603#0" />
+            <element signature="e#84420#85034#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="119" column="11" lean-forward="true" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
+          <folding>
+            <element signature="e#1771#4194#0" />
+            <element signature="e#6301#6667#0" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
