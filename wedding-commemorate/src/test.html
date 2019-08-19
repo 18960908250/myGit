@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        #iframe1{width: 500px;}
+        #iframe1 img{width: 100%;}
+    </style>
 </head>
 <body>
-<div id="div"></div>
+<iframe id="iframe1" src="./static/images/map.jpg" frameborder="0"></iframe>
 <script>
-    window.onload=function () {
-        var oDiv = document.getElementById('div');
-        var id = 'gadfadf'
-        oDiv.innerHTML = '<a onclick="testFun(\''+ id +'\')">click</a>'
-    }
-    function testFun(id){
-        alert(id)
+    window.onload = function () {
+        var oImg = document.getElementById('iframe1').contentWindow.document.getElementsByTagName('img')[0]
+        oImg.style.width = '100%'
+        oImg.style.height = '100%'
+        console.log(oImg)
     }
 </script>
 </body>
