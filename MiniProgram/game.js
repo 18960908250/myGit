@@ -67,7 +67,7 @@ function render() {
     if (plane.isRender) {
       render()
     } else {
-      score.darwEnd(num)
+      score.darwEnd(num, plane)
     }
   })
 }
