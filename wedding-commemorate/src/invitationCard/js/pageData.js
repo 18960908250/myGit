@@ -486,7 +486,7 @@ const pageData = {
                     "width": "628",
                     "height": "851",
                     "mask": {
-                        "img": "/images/defauleLanguageImg/peopleImgMask.png",
+                        "img": "./images/defauleLanguageImg/peopleImgMask.png",
                         "width": "628",
                         "height": "851"
                     },
@@ -614,7 +614,7 @@ const pageData = {
                     "width": "628",
                     "height": "393",
                     "mask": {
-                        "img": "/images/defauleLanguageImg/peopleImgMask.png",
+                        "img": "./images/defauleLanguageImg/peopleImgMask.png",
                         "width": "628",
                         "height": "393"
                     },
@@ -640,7 +640,7 @@ const pageData = {
                     "width": "386",
                     "height": "629",
                     "mask": {
-                        "img": "/images/defauleLanguageImg/peopleImgMask.png",
+                        "img": "./images/defauleLanguageImg/peopleImgMask.png",
                         "width": "386",
                         "height": "629"
                     },
@@ -749,7 +749,7 @@ const pageData = {
                     "width": "330",
                     "height": "485",
                     "mask": {
-                        "img": "/images/defauleLanguageImg/peopleImgMask.png",
+                        "img": "./images/defauleLanguageImg/peopleImgMask.png",
                         "width": "330",
                         "height": "485"
                     },
@@ -775,7 +775,7 @@ const pageData = {
                     "width": "251",
                     "height": "326",
                     "mask": {
-                        "img": "/images/defauleLanguageImg/peopleImgMask.png",
+                        "img": "./images/defauleLanguageImg/peopleImgMask.png",
                         "width": "251",
                         "height": "326"
                     },
@@ -801,7 +801,7 @@ const pageData = {
                     "width": "628",
                     "height": "386",
                     "mask": {
-                        "img": "/images/defauleLanguageImg/peopleImgMask.png",
+                        "img": "./images/defauleLanguageImg/peopleImgMask.png",
                         "width": "628",
                         "height": "386"
                     },
@@ -948,7 +948,7 @@ const pageData = {
                     "width": "640",
                     "height": "516",
                     "mask": {
-                        "img": "/images/defauleLanguageImg/peopleImgMask.png",
+                        "img": "./images/defauleLanguageImg/peopleImgMask.png",
                         "width": "640",
                         "height": "516"
                     },
@@ -1019,7 +1019,7 @@ const pageData = {
                     "width": "628",
                     "height": "1066",
                     "mask": {
-                        "img": "/images/defauleLanguageImg/peopleImgMask.png",
+                        "img": "./images/defauleLanguageImg/peopleImgMask.png",
                         "width": "628",
                         "height": "1066"
                     },
@@ -1147,7 +1147,7 @@ const pageData = {
                     "width": "628",
                     "height": "389",
                     "mask": {
-                        "img": "/images/defauleLanguageImg/peopleImgMask.png",
+                        "img": "./images/defauleLanguageImg/peopleImgMask.png",
                         "width": "628",
                         "height": "389"
                     },
@@ -1173,7 +1173,7 @@ const pageData = {
                     "width": "628",
                     "height": "389",
                     "mask": {
-                        "img": "/images/defauleLanguageImg/peopleImgMask.png",
+                        "img": "./images/defauleLanguageImg/peopleImgMask.png",
                         "width": "628",
                         "height": "389"
                     },
@@ -1301,7 +1301,7 @@ const pageData = {
                     "width": "314",
                     "height": "438",
                     "mask": {
-                        "img": "/images/defauleLanguageImg/peopleImgMask.png",
+                        "img": "./images/defauleLanguageImg/peopleImgMask.png",
                         "width": "314",
                         "height": "438"
                     },
@@ -1327,7 +1327,7 @@ const pageData = {
                     "width": "314",
                     "height": "438",
                     "mask": {
-                        "img": "/images/defauleLanguageImg/peopleImgMask.png",
+                        "img": "./images/defauleLanguageImg/peopleImgMask.png",
                         "width": "314",
                         "height": "438"
                     },
@@ -1353,7 +1353,7 @@ const pageData = {
                     "width": "314",
                     "height": "438",
                     "mask": {
-                        "img": "/images/defauleLanguageImg/peopleImgMask.png",
+                        "img": "./images/defauleLanguageImg/peopleImgMask.png",
                         "width": "314",
                         "height": "438"
                     },
@@ -1379,7 +1379,7 @@ const pageData = {
                     "width": "314",
                     "height": "438",
                     "mask": {
-                        "img": "/images/defauleLanguageImg/peopleImgMask.png",
+                        "img": "./images/defauleLanguageImg/peopleImgMask.png",
                         "width": "314",
                         "height": "438"
                     },

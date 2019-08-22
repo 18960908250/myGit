@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4736585-40b7-4b50-a2f7-1f4ff418224c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/static/audio/BGM-I_like.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniProgram/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniProgram/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniProgram/js/component/bullet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniProgram/js/component/bullet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniProgram/js/component/plane.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniProgram/js/component/plane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniProgram/js/component/score.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniProgram/js/component/score.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invitationCard/js/flowerLanguageData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/js/flowerLanguageData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/invitationCard/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/invitationCard/js/pageData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/invitationCard/js/pageData.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,19 +22,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/invitationCard/demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/invitationCard/js/flowerLanguageData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="2100" column="1" lean-forward="true" selection-start-line="2100" selection-start-column="1" selection-end-line="2100" selection-end-column="1" />
+            <state relative-caret-position="394">
+              <caret line="1801" column="38" selection-start-line="1801" selection-start-column="38" selection-end-line="1801" selection-end-column="38" />
               <folding>
                 <element signature="e#41#20295#0" />
                 <element signature="e#964#1737#0" />
@@ -57,7 +51,7 @@
                 <element signature="e#17696#18537#0" />
                 <element signature="e#18559#19391#0" />
                 <element signature="e#19413#20253#0" />
-                <element signature="e#20305#30603#0" />
+                <element signature="e#20442#21208#0" />
                 <element signature="e#21230#22003#0" />
                 <element signature="e#22025#22789#0" />
                 <element signature="e#22811#23582#0" />
@@ -67,7 +61,6 @@
                 <element signature="e#25992#26763#0" />
                 <element signature="e#26785#27558#0" />
                 <element signature="e#27580#28348#0" />
-                <element signature="e#28370#29456#0" />
                 <element signature="e#30613#38986#0" />
                 <element signature="e#30750#31524#0" />
                 <element signature="e#31546#32313#0" />
@@ -117,72 +110,52 @@
                 <element signature="e#67152#68002#0" />
                 <element signature="e#68024#69103#0" />
                 <element signature="e#69125#70207#0" />
-                <element signature="e#70259#74767#0" />
                 <element signature="e#70396#71167#0" />
                 <element signature="e#71189#71961#0" />
                 <element signature="e#71983#72754#0" />
                 <element signature="e#72776#73623#0" />
-                <element signature="e#73645#74725#0" />
-                <element signature="e#74777#85236#0" />
-                <element signature="e#74914#75612#0" />
-                <element signature="e#75635#76331#0" />
-                <element signature="e#76353#77051#0" />
-                <element signature="e#77073#77768#0" />
-                <element signature="e#77791#78488#0" />
-                <element signature="e#78511#79209#0" />
-                <element signature="e#79232#79929#0" />
-                <element signature="e#79952#80648#0" />
-                <element signature="e#80671#81369#0" />
-                <element signature="e#81392#82090#0" />
-                <element signature="e#82112#82813#0" />
-                <element signature="e#82836#83603#0" />
-                <element signature="e#84420#85034#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/invitationCard/js/pageData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="1665" column="14" selection-start-line="1665" selection-start-column="5" selection-end-line="1665" selection-end-column="14" />
-              <folding>
-                <element signature="e#53#13618#0" />
-                <element signature="e#13632#19160#0" />
-                <element signature="e#19174#24955#0" />
-                <element signature="e#24969#31032#0" />
-                <element signature="e#31046#36556#0" />
-                <element signature="e#36570#39201#0" />
-                <element signature="e#39215#44991#0" />
-                <element signature="e#45005#52738#0" />
-                <element signature="e#52752#62557#0" />
+                <element signature="e#74777#86221#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js">
+        <entry file="file://$PROJECT_DIR$/src/invitationCard/js/pageData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="119" column="11" lean-forward="true" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
+            <state relative-caret-position="196">
+              <caret line="1377" column="31" selection-start-line="1377" selection-start-column="31" selection-end-line="1377" selection-end-column="31" />
               <folding>
-                <element signature="e#1771#4194#0" />
-                <element signature="e#6301#6667#0" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#53#13618#0" />
+                <element signature="e#77#13608#0" />
+                <element signature="e#190#908#0" />
+                <element signature="e#930#1648#0" />
+                <element signature="e#1670#2388#0" />
+                <element signature="e#2410#3128#0" />
+                <element signature="e#3150#3859#0" />
+                <element signature="e#3881#4589#0" />
+                <element signature="e#13769#14479#0" />
+                <element signature="e#14501#15223#0" />
+                <element signature="e#15245#15963#0" />
+                <element signature="e#15985#16686#0" />
+                <element signature="e#16708#17405#0" />
+                <element signature="e#17427#18122#0" />
+                <element signature="e#19174#24955#0" />
+                <element signature="e#24969#31032#0" />
+                <element signature="e#31046#36556#0" />
+                <element signature="e#36570#39201#0" />
+                <element signature="e#39215#44991#0" />
+                <element signature="e#52752#62557#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/invitationCard/demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="38" column="58" lean-forward="true" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -236,6 +209,7 @@
       <replace>/images/</replace>
       <replace />
       <replace>/images/defauleLanguageImg/peopleImgMask.png</replace>
+      <replace>&quot;./images/defauleLanguageImg/peopleImgMask.png</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -247,10 +221,10 @@
         <option value="$PROJECT_DIR$/src/invitationCard/js/data.js" />
         <option value="$PROJECT_DIR$/src/test.html" />
         <option value="$PROJECT_DIR$/src/invitationCard/js/flowerLanguage.js" />
-        <option value="$PROJECT_DIR$/src/invitationCard/demo.html" />
-        <option value="$PROJECT_DIR$/src/invitationCard/js/pageData.js" />
         <option value="$PROJECT_DIR$/src/invitationCard/js/flowerLanguageData.js" />
         <option value="$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js" />
+        <option value="$PROJECT_DIR$/src/invitationCard/demo.html" />
+        <option value="$PROJECT_DIR$/src/invitationCard/js/pageData.js" />
       </list>
     </option>
   </component>
@@ -266,7 +240,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,6 +257,21 @@
               <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="invitationCard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="invitationCard" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wedding-commemorate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="invitationCard" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="defauleLanguageImg" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wedding-commemorate" type="b2602c69:ProjectViewProjectNode" />
@@ -324,13 +312,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/static/audio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -390,11 +379,12 @@
       <workItem from="1565854167753" duration="667000" />
       <workItem from="1565943875634" duration="1369000" />
       <workItem from="1566175174623" duration="14698000" />
+      <workItem from="1566442401843" duration="713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67881000" />
+    <option name="totallyTimeSpent" value="71391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -445,24 +435,7 @@
     <entry file="file://$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/page1/dateImg.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/invitationCard/js/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="511" selection-start-line="511" selection-end-line="511" />
-          <folding>
-            <element signature="e#469#14807#0" />
-            <element signature="e#14817#20593#0" />
-            <element signature="e#14978#15720#0" />
-            <element signature="e#15742#16499#0" />
-            <element signature="e#16521#17277#0" />
-            <element signature="e#17299#18047#0" />
-            <element signature="e#18069#18814#0" />
-            <element signature="e#18836#19583#0" />
-            <element signature="e#19605#20551#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/invitationCard/js/data.js" />
     <entry file="file://$PROJECT_DIR$/src/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -476,44 +449,40 @@
     <entry file="file://$PROJECT_DIR$/src/static/images/gobackIcon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/images/map.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/invitationCard/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/images/map.png" />
     <entry file="file://$PROJECT_DIR$/src/static/images/pageBg.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/invitationCard/images/defauleLanguageImg/peopleImgMask.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/invitationCard/js/pageData.js">
+    <entry file="file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="1665" column="14" selection-start-line="1665" selection-start-column="5" selection-end-line="1665" selection-end-column="14" />
+        <state relative-caret-position="413">
+          <caret line="119" column="11" lean-forward="true" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
           <folding>
-            <element signature="e#53#13618#0" />
-            <element signature="e#13632#19160#0" />
-            <element signature="e#19174#24955#0" />
-            <element signature="e#24969#31032#0" />
-            <element signature="e#31046#36556#0" />
-            <element signature="e#36570#39201#0" />
-            <element signature="e#39215#44991#0" />
-            <element signature="e#45005#52738#0" />
-            <element signature="e#52752#62557#0" />
+            <element signature="e#1771#4194#0" />
+            <element signature="e#6301#6667#0" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/invitationCard/js/flowerLanguageData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="2100" column="1" lean-forward="true" selection-start-line="2100" selection-start-column="1" selection-end-line="2100" selection-end-column="1" />
+        <state relative-caret-position="394">
+          <caret line="1801" column="38" selection-start-line="1801" selection-start-column="38" selection-end-line="1801" selection-end-column="38" />
           <folding>
             <element signature="e#41#20295#0" />
             <element signature="e#964#1737#0" />
@@ -539,7 +508,7 @@
             <element signature="e#17696#18537#0" />
             <element signature="e#18559#19391#0" />
             <element signature="e#19413#20253#0" />
-            <element signature="e#20305#30603#0" />
+            <element signature="e#20442#21208#0" />
             <element signature="e#21230#22003#0" />
             <element signature="e#22025#22789#0" />
             <element signature="e#22811#23582#0" />
@@ -549,7 +518,6 @@
             <element signature="e#25992#26763#0" />
             <element signature="e#26785#27558#0" />
             <element signature="e#27580#28348#0" />
-            <element signature="e#28370#29456#0" />
             <element signature="e#30613#38986#0" />
             <element signature="e#30750#31524#0" />
             <element signature="e#31546#32313#0" />
@@ -599,49 +567,47 @@
             <element signature="e#67152#68002#0" />
             <element signature="e#68024#69103#0" />
             <element signature="e#69125#70207#0" />
-            <element signature="e#70259#74767#0" />
             <element signature="e#70396#71167#0" />
             <element signature="e#71189#71961#0" />
             <element signature="e#71983#72754#0" />
             <element signature="e#72776#73623#0" />
-            <element signature="e#73645#74725#0" />
-            <element signature="e#74777#85236#0" />
-            <element signature="e#74914#75612#0" />
-            <element signature="e#75635#76331#0" />
-            <element signature="e#76353#77051#0" />
-            <element signature="e#77073#77768#0" />
-            <element signature="e#77791#78488#0" />
-            <element signature="e#78511#79209#0" />
-            <element signature="e#79232#79929#0" />
-            <element signature="e#79952#80648#0" />
-            <element signature="e#80671#81369#0" />
-            <element signature="e#81392#82090#0" />
-            <element signature="e#82112#82813#0" />
-            <element signature="e#82836#83603#0" />
-            <element signature="e#84420#85034#0" />
+            <element signature="e#74777#86221#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/invitationCard/js/demo_main_new.js">
+    <entry file="file://$PROJECT_DIR$/src/invitationCard/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="119" column="11" lean-forward="true" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
+        <state relative-caret-position="546">
+          <caret line="38" column="58" lean-forward="true" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/invitationCard/js/pageData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="1377" column="31" selection-start-line="1377" selection-start-column="31" selection-end-line="1377" selection-end-column="31" />
           <folding>
-            <element signature="e#1771#4194#0" />
-            <element signature="e#6301#6667#0" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#53#13618#0" />
+            <element signature="e#77#13608#0" />
+            <element signature="e#190#908#0" />
+            <element signature="e#930#1648#0" />
+            <element signature="e#1670#2388#0" />
+            <element signature="e#2410#3128#0" />
+            <element signature="e#3150#3859#0" />
+            <element signature="e#3881#4589#0" />
+            <element signature="e#13769#14479#0" />
+            <element signature="e#14501#15223#0" />
+            <element signature="e#15245#15963#0" />
+            <element signature="e#15985#16686#0" />
+            <element signature="e#16708#17405#0" />
+            <element signature="e#17427#18122#0" />
+            <element signature="e#19174#24955#0" />
+            <element signature="e#24969#31032#0" />
+            <element signature="e#31046#36556#0" />
+            <element signature="e#36570#39201#0" />
+            <element signature="e#39215#44991#0" />
+            <element signature="e#52752#62557#0" />
           </folding>
         </state>
       </provider>
