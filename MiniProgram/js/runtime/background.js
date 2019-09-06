@@ -3,7 +3,7 @@ import Sprite from '../base/sprite.js'
 class Background extends Sprite {
   constructor() {
     super({
-      src: './images/bg.jpg',
+      src: 'images/bg.jpg',
       width: global.screenWidth,
       height: global.screenHeight
     })

@@ -3,7 +3,7 @@ import DataBus from '../dataBus.js'
 const dataBus = new DataBus()
 
 const finishImg = new Image()
-finishImg.src = './images/Common.png'
+finishImg.src = 'images/Common.png'
 
 export default class GameInfo {
   constructor() {

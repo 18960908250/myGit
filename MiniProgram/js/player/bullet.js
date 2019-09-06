@@ -9,7 +9,7 @@ const dataBus = new DataBus()
 export default class bullet extends Sprite {
   constructor() {
     super({
-      src: './images/bullet.png',
+      src: 'images/bullet.png',
       width: 16,
       height: 30,
     })

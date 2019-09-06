@@ -12,7 +12,7 @@ export default class Enemy extends Animation {
     super({
       width: 60,
       height: 60,
-      src: './images/enemy.png'
+      src: 'images/enemy.png'
     })
     this.initExplosionAnimation()
   }
@@ -32,7 +32,7 @@ export default class Enemy extends Animation {
   initExplosionAnimation(){
     let imgArr = []
     const imgNum = 19
-    const imgBaseSrc = './images/explosion'
+    const imgBaseSrc = 'images/explosion'
     for(let i = 1; i<= imgNum; i++) {
       const imgSrc = `${imgBaseSrc}${i}.png`
       imgArr.push(imgSrc)

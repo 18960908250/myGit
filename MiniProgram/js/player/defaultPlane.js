@@ -8,7 +8,7 @@ const dataBus = new DataBus()
 class Plane extends Sprite {
   constructor() {
     super({
-      src: './images/hero.png',
+      src: 'images/hero.png',
       width: 80,
       height: 80,
     })
