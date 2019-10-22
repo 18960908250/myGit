@@ -1,9 +1,12 @@
-/*var http  = require('http')
-http.createServer(function (request, response) {
+const http  = require('http')
+const url = require('url')
+http.createServer((request, response) => {
     response.writeHead(200,{'content-type': 'text/plain'});
-    response.end('hello,world\n')
+    response.write('hello,world\n')
+    response.end()
 }).listen(8888)
-console.log('server running at http://127.0.0.1:8888/')*/
+console.log('server running at http://127.0.0.1:8888/')
+const fs = require('fs')
 /*var a=0;
 var b=0;
 process.stdin.resume()
@@ -37,7 +40,8 @@ fs.exists(filename, function (isExists) {
         console.log(`修改文件成功`)
     }
 })*/
-const fs = require('fs')
+// 基础脚手架
+/*
 const projectData = {
     fileList:[{
             name: 'project',
@@ -93,4 +97,32 @@ process.stdout.write('请输入项目名')
 process.stdin.on('data',function(chunk){
     start(chunk.toString())
     process.exit();
+})*/
+// 文件打包
+/*
+const lisenerPaht = './source'
+let num = 0
+fs.watch(lisenerPaht,(err, filename) => {
+    if (filename) {
+        fs.readdir(lisenerPaht, (err, fileList) => {
+            const targetArr = []
+            if (fileList && fileList.length > 0) {
+                fileList.forEach(item => {
+                    const info = fs.statSync(`${lisenerPaht}/${item}`)
+                    if (info.mode === 33206) {
+                        const data = fs.readFileSync(`${lisenerPaht}/${item}`)
+                        targetArr.push(data.toString())
+                    }
+                })
+            }
+            myPack(targetArr)
+        })
+    }
 })
+function myPack(targetArr) {
+    let concent = ''
+    targetArr.forEach(item => {
+        concent += `${item}\n`
+    })
+    fs.writeFile('./myproject/js/index.js',concent,(err,file) =>{})
+}*/
