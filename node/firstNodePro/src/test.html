@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text">
+<script>
+  /*window.onload=function () {
+        var oInput = document.getElementsByTagName('input')[0]
+
+        function log() {
+            console.log(this.value)
+        }
+
+        /!*var utils = {
+            shakeInit: function (callback, time) {
+                var timer = null
+                console.log(timer)
+                return function () {
+                    if(timer != null) {
+                        clearTimeout(timer)
+                        timer = null
+                    }
+                    timer = setTimeout(function () {
+                        callback && callback()
+                    }, time)
+                }
+            },
+            shake: function (callback, time, callbackOption) {
+                utils.shakeInit(callback, time, callbackOption)()
+            },
+            reduce: function(fn, delay = 100) {
+                let last = 0
+                return () => {
+                    if (nowTime - last > delay) {
+                        last  = nowTime
+                        fn.apply(this, arguments)
+                    }
+                }
+            },
+            once: function (callback) {
+                const callbackIDList = []
+                let count = 0
+                const callbackId = `${Math.random()}_${count++}`
+                callbackIDList.push(callbackId)
+            }
+        }*!/
+
+        // oInput.oninput = utils.reduce(log,3000)
+        const utils = {
+            shake: (callback, time) => {
+                let timer = null
+                return function() {
+                    if(timer) {
+                        clearTimeout(timer)
+                        timer = null
+                    }
+                    timer = setTimeout(() => {
+                        callback && callback.call(this)
+                    }, time)
+                }
+            },
+            reduce:(callback, delay) => {
+                let last = 0
+                return function () {
+                    const now = new Date().getTime()/1000
+                    if (now - last > delay) {
+                        last = now
+                        callback && callback.apply(this, arguments)
+                    }
+                }
+            }
+        }
+        // oInput.oninput = utils.shake(log,1000)
+        oInput.oninput = utils.reduce(log, 1)
+    }
+
+    /!*const arr = new Array(5).fill('')
+    function arrPush(index) {
+        let rand = parseInt(Math.random() * (32 - 2) + 2)
+        if (arr.some(item => item === rand)) {
+            arrPush(index)
+        } else {
+            if (arr.some(item => item === '')){
+                arr[index++] = rand
+                arrPush(index)
+            } else {
+                console.log(arr)
+            }
+        }
+    }
+    arrPush(0)*!/
+
+
+    // bind call apply的区别
+    /!* const obj1 = {
+        name: 'izaya',
+        age: 16,
+        show: function(schoool,like) {
+            alert(`name:${this.name},age:${this.age},school:${schoool},like:${like}`)
+        }
+    }
+    const obj2 = {
+        name: 'kilio',
+        age: 28
+    }
+    obj1.show('QingHua','eit')
+    obj1.show.call(obj2,'小学', '小姐姐')
+    obj1.show.apply(obj2,['小学', '小姐姐'])
+    obj1.show.bind(obj2)('小学', '小姐姐')*!/*/
+</script>
+</body>
+</html>

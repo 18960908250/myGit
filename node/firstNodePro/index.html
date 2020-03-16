@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+ <div>
+  <label for="">name</label><input type="text" id="name" />
+  <label for="">age</label><input type="text" id="age" />
+ </div>
+ <p></p>
+ <button id="add">add</button>
+ <button id="query">query</button>
+</div>
+<script src="./src/request.js"></script>
+<script>
+ const btnAdd = document.getElementById('add')
+ const btnQuery = document.getElementById('query')
+ const text = document.getElementsByTagName('p')[0]
+ const nameInput = document.getElementById('name')
+ const ageInput = document.getElementById('age')
+ const baseUrl = 'http://localhost:10010'
+ btnQuery.onclick = function () {
+   Ajax.send({
+     method: "post",
+     url: `${baseUrl}/query`,
+     data: {a:1},
+     success: (res) => {
+       text.innerHTML = JSON.stringify(res.data)
+     }
+   })
+ }
+ btnAdd.onclick = function () {
+   const data = {
+     name: nameInput.value,
+     age: ageInput.value
+   }
+   Ajax.send({
+     method: "post",
+     url: `${baseUrl}/add`,
+     data,
+     success: (res) => {
+       alert(res.message)
+     }
+   })
+ }
+
+
+</script>
+</body>
+</html>
