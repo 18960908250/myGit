@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "mainBar": "/components/mainBar/mainBar",
+    "custom": "/components/custom/custom"
+  }
 }

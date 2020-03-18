@@ -1,9 +1,8 @@
-<!--index.wxml-->
 <view class="container">
-  <custom bgColor="bg-gradual-blue" isBack="{{false}}" content="首页" />
+
   <!-- 用户 openid -->
   <view class="userinfo">
-    <button
+    <button 
       open-type="getUserInfo" 
       bindgetuserinfo="onGetUserInfo"
       class="userinfo-avatar"
@@ -14,5 +13,4 @@
       <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
     </view>
   </view>
-  <mainBar tab-type="index" />
 </view>

@@ -16,5 +16,17 @@ App({
     }
 
     this.globalData = {}
+    wx.getSystemInfo({
+      success: e => {
+        this.globalData.StatusBar = e.statusBarHeight;
+        let custom = wx.getMenuButtonBoundingClientRect();
+        this.globalData.Custom = custom;
+        this.globalData.CustomBar = custom.bottom + custom.top - e.statusBarHeight;
+        let modelmes = e.model;
+        if (modelmes.search('iPhone X') != -1) {
+          this.globalData.isIphoneX = true
+        }
+      }
+    })
   }
 })
