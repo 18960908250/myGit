@@ -1,9 +1,19 @@
 const app = getApp()
-Page({
-  data: {
-
+Component({
+  options: {
+    styleIsolation: 'apply-shared'
   },
-  onLoad: function (options) {
-
+  data: {
+    userInfo: {
+      avatarUrl: '/images/user-unlogin.png',
+      nickName: 'かねき'
+    }
+  },
+  created() {},
+  lifetimes: {
+    attached() {
+      console.log(app)
+    },
+    detached() {},
   },
 })

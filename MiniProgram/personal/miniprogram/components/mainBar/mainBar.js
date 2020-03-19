@@ -10,18 +10,17 @@ Component({
   properties: {
     tabType: {
       type: String,
-      default: 'index'
+      value: 'index'
     }
   },
   data: {
-    isIphoneX: false
+    isIphoneX: app.globalData.isIphoneX,
+    addBtnColor: 'bg-cyan'
   },
   lifetimes: {
     attached: function () {
       // 在组件实例进入页面节点树时执行
-      this.setData({
-        isIphoneX: app.globalData.isIphoneX
-      })
+      this.setBtnBg()
     },
     detached: function () {
       // 在组件实例被从页面节点树移除时执行
@@ -29,11 +28,24 @@ Component({
   },
   created() {},
   methods: {
+    setBtnBg() {
+      let addBtnColor = ''
+      switch (this.properties.tabType) {
+        case 'index':
+          addBtnColor = 'bg-cyan'
+          break
+        case 'mine':
+          addBtnColor = 'bg-mauve'
+          break
+        default:
+          addBtnColor = 'bg-cyan'
+      }
+      this.setData({ addBtnColor })
+    },
     goto(e) {
-      const name = e.target.dataset.name
-      wx.navigateTo({
-        url: `/pages/${name}/${name}`
-      })
+      const name = e.currentTarget.dataset.name
+      this.triggerEvent('changeIndex', {name})
+      this.setBtnBg()
     }
   }
 })

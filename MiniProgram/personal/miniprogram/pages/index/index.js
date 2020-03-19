@@ -3,18 +3,17 @@ const app = getApp()
 
 Page({
   data: {
-    avatarUrl: '/images/user-unlogin.png',
     userInfo: {},
     logged: false,
-    takeSession: false,
-    requestResult: ''
+    tabIndex: 'index',
+    CustomBar: app.globalData.CustomBar,
+    showModal: false
   },
 
   onLoad: function() {
     if (!wx.cloud) {
       return
     }
-
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -28,21 +27,20 @@ Page({
               })
             }
           })
+        } else {
+          console.log('未授权')
+          const dialogCompents = this.selectComponent('#dialogModel')
+          console.log(dialogCompents)
+          dialogCompents.showModal()
         }
       }
     })
   },
-
-  onGetUserInfo: function(e) {
-    if (!this.data.logged && e.detail.userInfo) {
-      this.setData({
-        logged: true,
-        avatarUrl: e.detail.userInfo.avatarUrl,
-        userInfo: e.detail.userInfo
-      })
-    }
+  changeIndex(e) {
+    this.setData({
+      tabIndex: e.detail.name
+    })
   },
-
   onGetOpenid: function() {
     // 调用云函数
     wx.cloud.callFunction({

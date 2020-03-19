@@ -1,16 +1,18 @@
-<view class="container">
-
-  <!-- 用户 openid -->
-  <view class="userinfo">
-    <button 
-      open-type="getUserInfo" 
-      bindgetuserinfo="onGetUserInfo"
-      class="userinfo-avatar"
-      style="background-image: url({{avatarUrl}})"
-      size="default"
-    ></button>
-    <view class="userinfo-nickname-wrapper">
-      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <view class='space'>
+      <view class="stars ">
+        <view class="star "></view>
+        <view class="star pink "></view>
+        <view class="star blue "></view>
+        <view class="star blue starSecond "></view>
+        <view class="star blue thred "></view>
+        <view class="star yellow "></view>
+      </view>
+    </view>
+    <view class="userInfoBox">
+      <image class="userinfoAvatar" src="{{userInfo.avatarUrl}}"></image>
+      <text class="userinfoNickname">{{userInfo.nickName}}</text>
     </view>
   </view>
-</view>
+</scroll-view>

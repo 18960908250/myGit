@@ -1,6 +1,8 @@
 {
   "usingComponents": {
     "mainBar": "/components/mainBar/mainBar",
-    "custom": "/components/custom/custom"
+    "dialog": "/components/dialog/dialog",
+    "home": "../home/home",
+    "mine": "../mine/mine"
   }
 }

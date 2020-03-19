@@ -1,13 +1,13 @@
 <!--components/mainBar.wxml-->
 <view class="{{isIphoneX ? 'margin-bottom-xl ': ''}}positionBottom cu-bar tabbar bg-black">
-    <view class="action text-cyan">
+    <view class="action text-{{tabType === 'index' ? 'cyan': 'gray'}}" data-name="index" bindtap="goto">
       <view class="cuIcon-homefill"></view> 首页
     </view>
     <view class="action text-gray">
       <view class="cuIcon-similar"></view> 分类
     </view>
     <view class="action text-gray add-action">
-      <button class="cu-btn cuIcon-add bg-cyan shadow"></button>
+      <button class="cu-btn cuIcon-add {{addBtnColor}} shadow"></button>
       发布
     </view>
     <view class="action text-gray">
@@ -16,7 +16,7 @@
       </view>
       购物车
     </view>
-    <view class="action text-gray" data-name="mine" bindtap="goto">
+    <view class="action text-{{tabType === 'mine' ? 'mauve': 'gray'}}" data-name="mine" bindtap="goto">
       <view class="cuIcon-my">
         <!-- <view class="cu-tag badge"></view> -->
       </view>

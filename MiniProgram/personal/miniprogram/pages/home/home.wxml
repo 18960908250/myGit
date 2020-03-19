@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+  <custom bgColor="bg-gradual-blue" isBack="{{false}}" content="首页" />
+</view>

@@ -9,27 +9,27 @@ Component({
   properties: {
     bgColor: {
       type: String,
-      default: ''
+      value: ''
     },
     isBack: {
       type: Boolean,
-      default: true
+      value: true
     },
     isCustom: {
       type: Boolean,
-      default: true
+      value: true
     },
     backText: {
       type: String,
-      default: ''
+      value: ''
     },
     content: {
       type: String,
-      default: ''
+      value: ''
     },
     bgImage: {
       type: String,
-      default: ''
+      value: ''
     }
   },
   data: {

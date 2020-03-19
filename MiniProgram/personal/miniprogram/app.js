@@ -1,5 +1,6 @@
 //app.js
 App({
+  globalData: {},
   onLaunch: function () {
     
     if (!wx.cloud) {
@@ -14,8 +15,6 @@ App({
         traceUser: true,
       })
     }
-
-    this.globalData = {}
     wx.getSystemInfo({
       success: e => {
         this.globalData.StatusBar = e.statusBarHeight;
@@ -25,8 +24,20 @@ App({
         let modelmes = e.model;
         if (modelmes.search('iPhone X') != -1) {
           this.globalData.isIphoneX = true
+        } else {
+          this.globalData.isIphoneX = false
         }
       }
     })
+  },
+  getSystemInfo() {
+    return new Promise((resolve, reject) => {
+      wx.getSystemInfo({
+        success: e => {
+          resolve(e)
+        }
+      })
+    })
   }
+
 })

@@ -1,0 +1,8 @@
+/* components/dialog/dialog.wxss */
+button:not([size='mini']){
+  min-height: auto;
+  width:auto;
+  margin-left: 30rpx;
+  margin-right: auto;
+  font-weight: 500;
+}
