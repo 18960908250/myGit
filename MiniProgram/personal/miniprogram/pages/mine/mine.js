@@ -6,14 +6,29 @@ Component({
   data: {
     userInfo: {
       avatarUrl: '/images/user-unlogin.png',
-      nickName: 'かねき'
-    }
+      nickName: 'かねき',
+    },
+    giveReward: 'cloud://dev-nwiao.6465-dev-nwiao-1301582346/money.jpg'
   },
   created() {},
   lifetimes: {
     attached() {
-      console.log(app)
+      const { avatarUrl, nickName } = app.globalData.userInfo
+      this.setData({
+        userInfo: {
+          avatarUrl,
+          nickName
+        }
+      })
     },
     detached() {},
   },
+  methods: {
+    showQrcode() {
+      wx.previewImage({
+        urls: [this.data.giveReward],
+        current: this.data.giveReward // 当前显示图片的http链接      
+      })
+    }
+  }
 })

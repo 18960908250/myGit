@@ -32,11 +32,7 @@ App({
   },
   getSystemInfo() {
     return new Promise((resolve, reject) => {
-      wx.getSystemInfo({
-        success: e => {
-          resolve(e)
-        }
-      })
+     
     })
   }
 

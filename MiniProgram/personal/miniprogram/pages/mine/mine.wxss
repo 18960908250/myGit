@@ -41,5 +41,5 @@
 }
 
 .userInfoBox{position: absolute;z-index: 99;text-align: center;}
-.userinfoAvatar{width: 160rpx;height:160rpx;margin-bottom: 10rpx;}
+.userinfoAvatar{width: 160rpx;height:160rpx;margin-bottom: 10rpx;border-radius: 50%;}
 .userinfoNickname{display: block;font-size: 48rpx;}

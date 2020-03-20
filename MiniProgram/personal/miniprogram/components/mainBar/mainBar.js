@@ -35,7 +35,10 @@ Component({
           addBtnColor = 'bg-cyan'
           break
         case 'mine':
-          addBtnColor = 'bg-mauve'
+          addBtnColor = 'bg-blue'
+          break
+        case 'classify':
+          addBtnColor = 'bg-orange'
           break
         default:
           addBtnColor = 'bg-cyan'
@@ -44,8 +47,19 @@ Component({
     },
     goto(e) {
       const name = e.currentTarget.dataset.name
+      if(name === 'shoppingCar') {
+        this.showDialog('购物车')
+        return
+      }
       this.triggerEvent('changeIndex', {name})
       this.setBtnBg()
+    },
+    showDialog(name) {
+      wx.showModal({
+        title: '提示',
+        content: `${name}还没做呢，表急`,
+        success(res) {}
+      })
     }
   }
 })

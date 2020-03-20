@@ -14,32 +14,35 @@ Page({
     if (!wx.cloud) {
       return
     }
-    // 获取用户信息
-    wx.getSetting({
-      success: res => {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
-          wx.getUserInfo({
-            success: res => {
-              this.setData({
-                avatarUrl: res.userInfo.avatarUrl,
-                userInfo: res.userInfo
-              })
-            }
-          })
-        } else {
-          console.log('未授权')
-          const dialogCompents = this.selectComponent('#dialogModel')
-          console.log(dialogCompents)
-          dialogCompents.showModal()
-        }
-      }
-    })
+    this.getSetting()
   },
   changeIndex(e) {
     this.setData({
       tabIndex: e.detail.name
     })
+  },
+  getSetting() {
+    // 获取用户信息
+    return new Promise((resolve, reject) => {
+      wx.getSetting({
+        success: res => {
+          if (res.authSetting['scope.userInfo']) {
+            // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
+            wx.getUserInfo({
+              success: res => {
+                app.globalData.userInfo = res.userInfo
+                this.onGetOpenid()
+              }
+            })
+            resolve()
+          } else {
+            const dialogCompents = this.selectComponent('#dialogModel')
+            dialogCompents.showModal()
+          }
+        }
+      })
+    })
+    
   },
   onGetOpenid: function() {
     // 调用云函数
@@ -52,7 +55,29 @@ Page({
       },
       fail: err => {
         console.error('[云函数] [login] 调用失败', err)
+      },
+      complete: () => {
+
       }
     })
   },
+  nextConfirm(e) {
+    const dialogCompents = this.selectComponent('#dialogModel')
+    if (e.detail.e.detail.errMsg === 'getUserInfo:ok') {
+      const userInfo = e.detail.e.detail.userInfo
+      app.globalData.userInfo = userInfo
+    } else {
+      wx.showModal({
+        title: '提示',
+        content: '您拒绝了授权将无法使用本程序，请重新授权',
+        success(res) {
+          if (res.confirm) {
+            dialogCompents.showModal()
+          } else if (res.cancel) {
+            dialogCompents.showModal()
+          }
+        }
+      })
+    }
+  }
 })

@@ -13,11 +13,11 @@ Component({
     },
     isBack: {
       type: Boolean,
-      value: true
+      value: false
     },
     isCustom: {
       type: Boolean,
-      value: true
+      value: false
     },
     backText: {
       type: String,

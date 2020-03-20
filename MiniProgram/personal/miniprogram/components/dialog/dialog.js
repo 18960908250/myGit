@@ -4,6 +4,10 @@ Component({
     styleIsolation: 'apply-shared'
   },
   properties: {
+    isGetUserInfo: {
+      type: Boolean,
+      value: false,
+    },
     title: {
       type: String,
       value: 'title'
@@ -35,8 +39,8 @@ Component({
         show: true
       })
     },
-    confirm() {
-      this.triggerEvent('confirm')
+    confirm(e) {
+      this.triggerEvent('confirm',{e})
       this.hideModal()
     },
     cannle() {

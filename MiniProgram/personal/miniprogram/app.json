@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/keepAccounts/keepAccounts"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

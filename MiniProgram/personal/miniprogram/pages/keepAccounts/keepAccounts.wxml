@@ -1,0 +1,5 @@
+<!--miniprogram/pages/keepAccounts/keepAccounts.wxml-->
+<view class="container">
+  <custom bgColor="bg-gradual-blue" isCustom="{{true}}" content="记账" />
+  
+</view>
