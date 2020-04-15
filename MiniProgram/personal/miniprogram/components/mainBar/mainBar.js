@@ -60,6 +60,12 @@ Component({
         content: `${name}还没做呢，表急`,
         success(res) {}
       })
+    },
+    navGoto(e) {
+      const name = e.currentTarget.dataset.name
+      wx.navigateTo({
+        url: `/pages/${name}/${name}`
+      })
     }
   }
 })

@@ -6,7 +6,7 @@
     <view class="action text-{{tabType === 'classify' ? 'orange': 'gray'}}" data-name="classify" bindtap="goto">
       <view class="cuIcon-similar"></view> 分类
     </view>
-    <view class="action text-gray add-action">
+    <view class="action text-gray add-action" bindtap="navGoto" data-name="chat">
       <button class="cu-btn cuIcon-mark {{addBtnColor}} shadow"></button>
       聊天室
     </view>

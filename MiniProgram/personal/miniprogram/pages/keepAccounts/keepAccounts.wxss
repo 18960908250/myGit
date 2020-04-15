@@ -1,1 +1,6 @@
 /* miniprogram/pages/keepAccounts/keepAccounts.wxss */
+.cu-form-group .title {
+  min-width: calc(4em + 30rpx);
+}
+.padding{margin-top: 300rpx;}
+.padding button{width: 100%;}
