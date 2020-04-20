@@ -4,25 +4,20 @@ Page({
   data: {
     date: 0,
     time: 0,
-    consumptionList: [{id: 0, name: '个人'}, {id: 1, name: '公共'}, {id: 2, name: 'baby'}],
-    payTypeArray: [
-      {
-        name: '微信', 
-        id: 1,
-        children: [{ name: '零钱', id: 100 }, { name: '信用卡', id: 101 }, { name: '银行卡', id: 102 }]
-      },
-      {
-        name:'支付宝',
-        id: 2,
-        children: [{ name: '花呗', id: 200 }, { name: '信用卡', id: 201 }, { name: '银行卡', id: 302 }, { name: '余额宝/余额', id: 303}]
-      },
-      { name: '信用卡', id: 3, children: [{ name: '信用卡', id: 3 }]},
-      { name: '银行卡', id: 4, children: [{ name: '银行卡', id: 4 }]},
-      { name: '现金', id: 5, children: [{ name: '现金', id: 5 }]}
-    ],
+    consumptionIndex: null,
+    consumptionList: [],
+    payTypeArray: [],
     multiArray: [],
-    multiIndexList: [],
+    multiIndexList: [0,0],
     region: ['福建省', '福州市', '晋安区'],
+    sendData: {
+      shoppingName: '',
+      consumptionType: 0,
+      date: 0,
+      payType: 0,
+      region: [],
+      postcode: 0
+    }
   },
 
   /**
@@ -38,21 +33,51 @@ Page({
     this.init()
   },
   init() {
-    console.log('init')
     this.setData({
-      date: new Date().Format('yyyy-MM-dd')
+      date: new Date().Format('yyyy-MM-dd'),
+      'sendData.date': new Date().getTime(),
+       time: new Date().Format('hh:mm')
     })
-    this.setData({
-      time: new Date().Format('hh:mm')
+    this.getPayTypeArray()
+    this.getConsumptionList()
+  },
+  getPayTypeArray() {
+    wx.cloud.callFunction({
+      name: 'queryPayType',
+      data: {},
+      success: res => {
+        this.setData({ payTypeArray: res.result })
+        this.setData({
+          multiArray: [this.data.payTypeArray, this.data.payTypeArray[0].children]
+        })
+      },
+      fail: err => {
+        console.error('[云函数] [login] 调用失败', err)
+      }
     })
+  },
+  getConsumptionList() {
+    wx.cloud.callFunction({
+      name: 'queryConsumption',
+      data: {},
+      success: res => {
+        this.setData({ consumptionList: res.result })
+      },
+      fail: err => {
+        console.error('[云函数] [login] 调用失败', err)
+      }
+    })
+  },
+  getShoppingName(e) {
     this.setData({
-      multiArray: [this.data.payTypeArray, this.data.payTypeArray[0].children]
+      'sendData.shoppingName': e.detail.value
     })
   },
   consumptionChange(e) {
     console.log(e);
     this.setData({
-      index: e.detail.value
+      consumptionIndex: e.detail.value,
+      'sendData.consumptionType': this.data.consumptionList[e.detail.value].id
     })
   },
   TimeChange(e) {
@@ -62,23 +87,30 @@ Page({
   },
   DateChange(e) {
     this.setData({
-      date: e.detail.value
+      date: e.detail.value,
+      'sendData.date': new Date(e.detail.value).getTime()
     })
   },
   MultiChange(e) {
+    const { multiArray, multiIndexList } = this.data
     this.setData({
-      multiIndexList: e.detail.value
+      multiIndexList: e.detail.value,
+      'sendData.payType': multiArray[1][multiIndexList[1]].id
     })
   },
-  RegionChange: function (e) {
+  RegionChange(e) {
+    console.log(e)
     this.setData({
-      region: e.detail.value
+      region: e.detail.value,
+      'sendData.region': e.detail.value,
+      'sendData.postcode': e.detail.postcode
     })
   },
   MultiColumnChange(e) {
+    const { multiArray, multiIndexList } = this.data
     let data = {
-      multiArray: this.data.multiArray,
-      multiIndexList: this.data.multiIndexList
+      multiArray: multiArray,
+      multiIndexList: multiIndexList
     };
     const { column, value } = e.detail
     data.multiIndexList[column] = value;
@@ -86,5 +118,17 @@ Page({
       data.multiArray[1] = this.data.payTypeArray[value].children
     }
     this.setData(data)
+  },
+  save() {
+    wx.cloud.callFunction({
+      name: 'saveBill',
+      data: this.data.sendData,
+      success: res => {
+        this.setData({ consumptionList: res.result })
+      },
+      fail: err => {
+        console.error('[云函数] [login] 调用失败', err)
+      }
+    })
   }
 })

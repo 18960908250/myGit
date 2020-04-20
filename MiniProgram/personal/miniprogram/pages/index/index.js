@@ -31,6 +31,7 @@ Page({
             wx.getUserInfo({
               success: res => {
                 app.globalData.userInfo = res.userInfo
+                console.log(res.userInfo)
                 this.onGetOpenid()
               }
             })
@@ -50,8 +51,7 @@ Page({
       name: 'login',
       data: {},
       success: res => {
-        console.log('[云函数] [login] user openid: ', res)
-        app.globalData.openid = res.result.openid
+        console.log('[云函数] [login] 调用成功')
       },
       fail: err => {
         console.error('[云函数] [login] 调用失败', err)
@@ -64,8 +64,7 @@ Page({
   nextConfirm(e) {
     const dialogCompents = this.selectComponent('#dialogModel')
     if (e.detail.e.detail.errMsg === 'getUserInfo:ok') {
-      const userInfo = e.detail.e.detail.userInfo
-      app.globalData.userInfo = userInfo
+      this.onGetOpenid()
     } else {
       wx.showModal({
         title: '提示',

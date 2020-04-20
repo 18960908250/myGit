@@ -10,12 +10,12 @@ Component({
       {
         id: 0,
         type: 'image',
-        url: 'cloud://dev-nwiao.6465-dev-nwiao-1301582346/test1.png'
+        url: 'cloud://dev-nwiao.6465-dev-nwiao-1301582346/banner2.jpg'
       }, 
       {
       id: 1,
       type: 'image',
-        url: 'cloud://dev-nwiao.6465-dev-nwiao-1301582346/test1.png',
+        url: 'cloud://dev-nwiao.6465-dev-nwiao-1301582346/banner1.jpg',
       }
     ],
   },
