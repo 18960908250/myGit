@@ -1,6 +1,6 @@
 //index.js
 const app = getApp()
-
+const { cloudRequest } = require('../../utils/util.js')
 Page({
   data: {
     userInfo: {},
@@ -10,11 +10,23 @@ Page({
     showModal: false
   },
 
-  onLoad: function() {
+  onLoad(opt) {
+    if (opt.tabIndex) {
+      this.setData(opt)
+    }
     if (!wx.cloud) {
       return
     }
     this.getSetting()
+  },
+  onShareAppMessage: function () {
+    let users = wx.getStorageSync('user');
+    if (res.from === 'button') { }
+    return {
+      title: '转发',
+      path: '/pages/index/index',
+      success: function (res) { }
+    }
   },
   changeIndex(e) {
     this.setData({
@@ -31,7 +43,6 @@ Page({
             wx.getUserInfo({
               success: res => {
                 app.globalData.userInfo = res.userInfo
-                console.log(res.userInfo)
                 this.onGetOpenid()
               }
             })
@@ -47,18 +58,11 @@ Page({
   },
   onGetOpenid: function() {
     // 调用云函数
-    wx.cloud.callFunction({
+    cloudRequest({
       name: 'login',
-      data: {},
-      success: res => {
-        console.log('[云函数] [login] 调用成功')
-      },
-      fail: err => {
-        console.error('[云函数] [login] 调用失败', err)
-      },
-      complete: () => {
-
-      }
+    }).then(res => {
+    }).catch(e=> {
+      console.error('[云函数] [login] 调用失败', err)
     })
   },
   nextConfirm(e) {

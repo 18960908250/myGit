@@ -13,5 +13,32 @@ Date.prototype.Format = function (fmt) { //author: meizz
     if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
   return fmt;
 }
-
-module.exports = {}
+const cloudRequest = function ({ name, data = {}}) { 
+  return new Promise((resove,reject) => {
+    wx.showLoading({
+      title: '加载中',
+      mask: true
+    });
+    wx.cloud.callFunction({
+      name,
+      data,
+      success: res => {
+        resove(res)
+      },
+      fail: err => {
+        reject(err)
+        wx.showToast({
+          title: err.errMsg,
+          icon: 'none',
+          duration: 1000
+        })
+      },
+      complete() {
+        wx.hideLoading();
+      }
+    })
+  })
+}
+module.exports = {
+  cloudRequest
+}

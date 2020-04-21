@@ -2,7 +2,7 @@
 <view class="container">
   <custom class="custom" bgColor="bg-gradual-orange" isBack="{{false}}" content="分类" />
   <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
-    <view class="cu-item" wx:for="{{iconList}}" wx:key bindtap="goto" data-item="{{item}}">
+    <view class="cu-item" wx:for="{{iconList}}" wx:key data-item="{{item}}">
     <navigator url="/pages/{{item.address}}/{{item.address}}">
       <view class="cuIcon-{{item.icon}} text-{{item.color}}">
         <view class="cu-tag badge" wx:if="{{item.badge!=0}}">

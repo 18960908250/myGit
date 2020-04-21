@@ -3,4 +3,4 @@
   min-width: calc(4em + 30rpx);
 }
 .padding{margin-top: 300rpx;}
-.padding button{width: 100%;}
+.padding .cu-btn{width: 100%;}

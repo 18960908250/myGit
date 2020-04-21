@@ -7,6 +7,10 @@
       <input placeholder="消费名称" bindblur="getShoppingName"></input>
     </view>
     <view class="cu-form-group margin-top">
+      <view class="title">消费金额</view>
+      <input placeholder="消费金额" data-key="money" bindblur="setBindData"></input>
+    </view>
+    <view class="cu-form-group margin-top">
       <view class="title">消费类型</view>
       <picker bindchange="consumptionChange" value="{{consumptionIndex}}" range="{{consumptionList}}" range-key="name">
         <view class="picker">

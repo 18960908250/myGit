@@ -1,5 +1,5 @@
 // miniprogram/pages/keepAccounts/keepAccounts.js
-const { formatTime } = require('../../utils/util.js')
+const { cloudRequest } = require('../../utils/util.js')
 Page({
   data: {
     date: 0,
@@ -12,11 +12,13 @@ Page({
     region: ['福建省', '福州市', '晋安区'],
     sendData: {
       shoppingName: '',
-      consumptionType: 0,
-      date: 0,
-      payType: 0,
-      region: [],
-      postcode: 0
+      consumptionType: null,
+      date: null,
+      payType: null,
+      province: '福建省',
+      city: '福州市',
+      district: '晋安区',
+      postcode: 350011
     }
   },
 
@@ -42,36 +44,28 @@ Page({
     this.getConsumptionList()
   },
   getPayTypeArray() {
-    wx.cloud.callFunction({
+    cloudRequest({
       name: 'queryPayType',
-      data: {},
-      success: res => {
-        this.setData({ payTypeArray: res.result })
-        this.setData({
-          multiArray: [this.data.payTypeArray, this.data.payTypeArray[0].children]
-        })
-      },
-      fail: err => {
-        console.error('[云函数] [login] 调用失败', err)
-      }
+    }).then(res => {
+      this.setData({ payTypeArray: res.result })
+      this.setData({
+        multiArray: [this.data.payTypeArray, this.data.payTypeArray[0].children],
+        'sendData.payType': this.data.payTypeArray[0].children[0].id
+      })
     })
   },
   getConsumptionList() {
-    wx.cloud.callFunction({
-      name: 'queryConsumption',
-      data: {},
-      success: res => {
-        this.setData({ consumptionList: res.result })
-      },
-      fail: err => {
-        console.error('[云函数] [login] 调用失败', err)
-      }
+    cloudRequest({ name: 'queryConsumption' }).then(res => {
+      this.setData({ consumptionList: res.result })
     })
   },
   getShoppingName(e) {
     this.setData({
       'sendData.shoppingName': e.detail.value
     })
+  },
+  setBindData(e) {
+    conosle.log(e)
   },
   consumptionChange(e) {
     console.log(e);
@@ -99,10 +93,11 @@ Page({
     })
   },
   RegionChange(e) {
-    console.log(e)
     this.setData({
       region: e.detail.value,
-      'sendData.region': e.detail.value,
+      'sendData.province': e.detail.value[0],
+      'sendData.city': e.detail.value[1],
+      'sendData.district': e.detail.value[2],
       'sendData.postcode': e.detail.postcode
     })
   },
@@ -119,16 +114,38 @@ Page({
     }
     this.setData(data)
   },
-  save() {
-    wx.cloud.callFunction({
-      name: 'saveBill',
-      data: this.data.sendData,
-      success: res => {
-        this.setData({ consumptionList: res.result })
-      },
-      fail: err => {
-        console.error('[云函数] [login] 调用失败', err)
+  verify(data) {
+    const dictionaries = {
+      shoppingName: '请输入消费名称',
+      consumptionType: '请选择消费类型',
+    }
+    const keyList = Object.keys(data)
+    for(let i=0;i<keyList.length;i++) {
+      const keys = keyList[i]
+      if (!data[keys] && data[keys] !== 0) {
+        wx.showToast({
+          title: dictionaries[keys],
+          icon: 'none',
+          duration: 2000
+        })
+        return true
       }
+    }
+    return false
+  },
+  save() {
+    const data = this.data.sendData
+    if (this.verify(data)) return
+    cloudRequest({ name: 'saveBill', data }).then(res => {
+      wx.showToast({
+        title: '保存成功',
+        icon: 'success',
+        duration: 2000
+      })
+      wx.redirectTo({
+        url: '/pages/index/index?tabIndex=classify'
+      })
     })
-  }
+  },
+
 })
