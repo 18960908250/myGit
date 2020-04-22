@@ -6,13 +6,17 @@ Page({
     time: 0,
     consumptionIndex: null,
     consumptionList: [],
+    categoriesIndex: null,
+    categoriesList: [],
     payTypeArray: [],
     multiArray: [],
     multiIndexList: [0,0],
     region: ['福建省', '福州市', '晋安区'],
     sendData: {
       shoppingName: '',
+      money: 0,
       consumptionType: null,
+      costCategories: null,
       date: null,
       payType: null,
       province: '福建省',
@@ -21,16 +25,7 @@ Page({
       postcode: 350011
     }
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-  /**
-   * 生命周期函数--监听页面卸载
-   */
+  onLoad: function (options) {},
   onReady: function () {
     this.init()
   },
@@ -42,6 +37,7 @@ Page({
     })
     this.getPayTypeArray()
     this.getConsumptionList()
+    this.getCategoriesList()
   },
   getPayTypeArray() {
     cloudRequest({
@@ -59,19 +55,31 @@ Page({
       this.setData({ consumptionList: res.result })
     })
   },
+  getCategoriesList() {
+    cloudRequest({ name: 'queryCategories' }).then(res => {
+      this.setData({ categoriesList: res.result })
+    })
+  },
   getShoppingName(e) {
     this.setData({
       'sendData.shoppingName': e.detail.value
     })
   },
   setBindData(e) {
-    conosle.log(e)
+    this.setData({
+      'sendData.money': parseFloat(e.detail.value)
+    })
   },
   consumptionChange(e) {
-    console.log(e);
     this.setData({
       consumptionIndex: e.detail.value,
       'sendData.consumptionType': this.data.consumptionList[e.detail.value].id
+    })
+  },
+  categoriesChange(e) {
+    this.setData({
+      categoriesIndex: e.detail.value,
+      'sendData.costCategories': this.data.categoriesList[e.detail.value].id
     })
   },
   TimeChange(e) {
@@ -117,6 +125,8 @@ Page({
   verify(data) {
     const dictionaries = {
       shoppingName: '请输入消费名称',
+      money: '请输入消费金额',
+      costCategories: '请选择消费对象',
       consumptionType: '请选择消费类型',
     }
     const keyList = Object.keys(data)

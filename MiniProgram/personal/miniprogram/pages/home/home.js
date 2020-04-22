@@ -17,7 +17,7 @@ Component({
     gridBorder: false,
     iconList: [
       { icon: 'edit', color: 'blue', badge: 0, name: '记账', address: 'keepAccounts' },
-      { icon: 'text', color: 'cyan', badge: 0, name: '账单记录', address: 'keepAccounts' },
+      { icon: 'text', color: 'cyan', badge: 0, name: '账单记录', address: 'billList' },
       { icon: 'comment', color: 'green', badge: 0, name: '聊天室', address: '' },
     ],
     showDrawer: false,
