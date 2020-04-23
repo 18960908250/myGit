@@ -1,1 +1,3 @@
 /* miniprogram/pages/billList/billList.wxss */
+.cu-list.menu-avatar>.cu-item .content{left:20rpx;}
+.cu-list.menu-avatar>.cu-item .action{width: 200rpx;}

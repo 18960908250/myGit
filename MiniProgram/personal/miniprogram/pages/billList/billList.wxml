@@ -1,20 +1,29 @@
 <!--miniprogram/pages/billList/billList.wxml-->
 <scroll-view>
   <custom bgColor="bg-gradual-green" isCustom="{{true}}" content="账单记录" />
-  <view class="cu-list menu-avatar">
-    <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{4}}" wx:key bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
-      <view class="cu-avatar round lg"></view>
+  <view class="cu-bar search bg-white">
+    <view class="action">
+      <text>广州</text>
+      <text class="cuIcon-triangledownfill"></text>
+    </view>
+  </view>
+  <scroll-view scroll-x class="bg-white nav text-center">
+    <view class="cu-item {{index==TabCur?'text-blue cur':''}}" wx:for="{{tabList}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+      {{item}}
+    </view>
+  </scroll-view>
+  <view wx:if="{{TabCur === 0}}" class="cu-list menu-avatar">
+    <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{billList}}" wx:key bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
       <view class="content">
-        <view class="text-grey">文晓港</view>
-        <view class="text-gray text-sm">
-          <text class="cuIcon-infofill text-red"></text> 消息未送达</view>
+        <view class="text-red">{{item.money}}￥</view>
+        <view class="text-gray text-sm">{{item.payTypeName}}-{{item.shoppingName}}</view>
       </view>
       <view class="action">
-        <view class="text-grey text-xs">22:20</view>
-        <view class="cu-tag round bg-grey sm">5</view>
+        <view class="text-grey text-xs">{{item.date}}</view>
+        <view class="text-green text-xs">{{item.consumptionName}}/{{item.costCategoriesName}}</view>
       </view>
       <view class="move">
-        <view class="bg-grey">置顶</view>
+        <view class="bg-grey">修改</view>
         <view class="bg-red">删除</view>
       </view>
     </view>
