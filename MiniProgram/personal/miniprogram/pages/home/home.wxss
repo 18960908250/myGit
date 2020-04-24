@@ -3,6 +3,7 @@ page {
   background: #fff;
   width: 100vw;
   overflow: hidden;
+  -webkit-overflow-scrolling : touch;
 }
 .DrawerPage {
   position: fixed;

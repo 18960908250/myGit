@@ -9,18 +9,31 @@ Page({
     },
     total: 0,
     billList: [],
+    month: new Date().getMonth() + 1,
+    costCategories: '请选择类型',
     TabCur: 0,
-    tabList: ['清单列表', '图表']
+    tabList: ['列表', '图表'],
+    modelName: '',
+    costCategoriesList: [],
+    monthList: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
   },
   onLoad: function(options) {},
   onReady: function() {
     this.getBillList()
+    this.getCategories()
   },
-  onShow: function() {},
-  onHide: function() {},
   onPullDownRefresh: function() {},
   onReachBottom: function() {},
-  onShareAppMessage: function() {},
+  getCategories() {
+    cloudRequest({
+      name: 'queryCategories',
+      data: {}
+    }).then(res => {
+      this.setData({
+        costCategoriesList: res.result
+      })
+    })
+  },
   getBillList() {
     cloudRequest({
       name: 'queryBillList',
@@ -44,6 +57,30 @@ Page({
   tabSelect(e) {
     this.setData({
       TabCur: e.currentTarget.dataset.id
+    })
+  },
+  showMenu(e) {
+    const { modelName } = e.currentTarget.dataset
+    if (this.data.modelName !== modelName) {
+      this.setData({ modelName })
+    }else {
+      this.setData({ modelName: null })
+    }
+  },
+  selectMonth(e) {
+    const { id } = e.currentTarget.dataset
+    this.setData({
+      month: id + 1,
+      'sendData.dateTime': new Date().setMonth(id + 1),
+      modelName: null,
+    })
+  },
+  selectCategories(e) {
+    const { id, name } = e.currentTarget.dataset
+    this.setData({
+      name,
+      'sendData.costCategories': id,
+      modelName: null,
     })
   },
   // ListTouch触摸开始

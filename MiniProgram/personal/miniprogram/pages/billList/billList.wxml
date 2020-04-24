@@ -1,19 +1,35 @@
 <!--miniprogram/pages/billList/billList.wxml-->
-<scroll-view>
+<scroll-view class="billList">
   <custom bgColor="bg-gradual-green" isCustom="{{true}}" content="账单记录" />
   <view class="cu-bar search bg-white">
-    <view class="action">
-      <text>广州</text>
+    <view class="action" data-model-name="costCategories" bindtap="showMenu">
+      <text>{{costCategories}}</text>
+      <text class="cuIcon-triangledownfill"></text>
+    </view>
+    <view class="action" data-model-name="month" bindtap="showMenu">
+      <text>{{month}}月</text>
       <text class="cuIcon-triangledownfill"></text>
     </view>
   </view>
+  <view class="dropdownBox {{modelName? 'showDrop': ''}}">
+    <view class="contentBox {{modelName === 'month'? 'showContent': 'blockNone'}}">
+      <view class="itemBox" wx:for="{{monthList}}" wx:key>
+        <button class="cu-btn round line-blue sm " data-id="{{index}}" bindtap="selectMonth">{{item}}</button>
+      </view>
+    </view>
+    <view class="contentBox {{modelName === 'costCategories'? 'showContent': 'blockNone'}}">
+      <view class="itemBox" wx:for="{{costCategoriesList}}" wx:key>
+        <button class="cu-btn round line-blue sm " data-id="{{item.id}}" data-name="{{item.name}}" bindtap="selectCategories">{{item.name}}</button>
+      </view>
+    </view>
+  </view>
   <scroll-view scroll-x class="bg-white nav text-center">
-    <view class="cu-item {{index==TabCur?'text-blue cur':''}}" wx:for="{{tabList}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+    <view class="cu-item flex-sub {{index==TabCur?'text-blue cur':''}}" wx:for="{{tabList}}" wx:key bindtap="tabSelect" data-id="{{index}}">
       {{item}}
     </view>
   </scroll-view>
   <view wx:if="{{TabCur === 0}}" class="cu-list menu-avatar">
-    <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{billList}}" wx:key bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
+    <view wx:if="{{billList.length > 0}}" class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{billList}}" wx:key bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
       <view class="content">
         <view class="text-red">{{item.money}}￥</view>
         <view class="text-gray text-sm">{{item.payTypeName}}-{{item.shoppingName}}</view>
@@ -27,5 +43,6 @@
         <view class="bg-red">删除</view>
       </view>
     </view>
+    <view wx:if="{{billList.length===0}}">暂无记录</view>
   </view>
 </scroll-view>

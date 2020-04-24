@@ -1,3 +1,13 @@
 /* miniprogram/pages/billList/billList.wxss */
+.billList{height:100vh;}
 .cu-list.menu-avatar>.cu-item .content{left:20rpx;}
 .cu-list.menu-avatar>.cu-item .action{width: 200rpx;}
+.dropdownBox{
+  position: absolute;z-index: 999;transition: all 0.4s;height:0;overflow: hidden;background: rgba(0,0,0,.3);
+}
+.contentBox{display: flex;justify-content: space-around;align-items:center;flex-wrap: wrap;background: #fff;opacity: 0;transition: all 0.4s;}
+.dropdownBox .itemBox{width:150rpx;margin: 10rpx 15rpx;}
+.dropdownBox .cu-btn{width: 150rpx;}
+.showDrop{height:calc(100vh - 220rpx);}
+.showContent{opacity: 1;}
+.blockNone{height: 0;}
