@@ -1,5 +1,6 @@
 // miniprogram/pages/billList/billList.js
 const {cloudRequest} = require('../../utils/util.js')
+import * as echarts from '../../ec-canvas/echarts';
 Page({
   data: {
     sendData: {
@@ -8,29 +9,94 @@ Page({
       dateTime: new Date().getTime()
     },
     total: 0,
+    isFinished: false,
     billList: [],
     month: new Date().getMonth() + 1,
     costCategories: '请选择类型',
     TabCur: 0,
     tabList: ['列表', '图表'],
     modelName: '',
-    costCategoriesList: [],
-    monthList: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
+    costCategoriesList: [{id: null, name: '全部'}],
+    monthList: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+    colorList: ['#1cbbb4', '#0081ff', '#8dc63f', '#0081ff', '#39b54a'],
+    legendList: ['西凉', '益州', '兖州', '荆州', '幽州'],
+    seriesList: [
+      { value: 1548, name: '幽州', itemStyle: { color: '#1cbbb4' } },
+      { value: 535, name: '荆州', itemStyle: { color: '#0081ff' } },
+      { value: 510, name: '兖州', itemStyle: { color: '#8dc63f' } },
+      { value: 634, name: '益州', itemStyle: { color: '#0081ff' } },
+      { value: 735, name: '西凉', itemStyle: { color: '#39b54a' } }],
+    sbutext: '',
+    ec: {}
   },
   onLoad: function(options) {},
   onReady: function() {
     this.getBillList()
     this.getCategories()
+    this.getAllBill().then(() => {
+      this.setData({
+        ec: {
+          onInit: this.initChart
+        }
+      })
+    })
   },
-  onPullDownRefresh: function() {},
-  onReachBottom: function() {},
+  onPullDownRefresh: function() {
+    this.setData({
+      sendData: {
+        pageSize: 10,
+        pageNum: 0,
+        dateTime: new Date().getTime()
+      }
+    })
+    this.getBillList()
+    wx.stopPullDownRefresh();
+  },
+  onReachBottom: function() {
+    if (!this.data.isFinished) {
+      this.data.sendData.pageNum++
+      this.getBillList()
+    }
+  },
+  getAllBill() {
+    return new Promise((resolve, reject) => {
+      let year = new Date().getFullYear()
+      let month = new Date().getMonth()
+      let startTime = 0
+      let endTime = 0
+      if (month === 11) {
+        startTime = new Date(year, month).getTime()
+        endTime = new Date(year + 1, 0, 0).getTime()
+      } else {
+        startTime = new Date(year, month).getTime()
+        endTime = new Date(year, month + 1, 0).getTime()
+      }
+      cloudRequest({
+        name: 'queryAllBill',
+        data: {
+          startTime,
+          endTime
+        }
+      }).then(res => {
+        const { sum, list } = res.result
+        this.setData({
+          legendList: list.map(item => item.name),
+          seriesList: list.map((item, index) => {
+            return { value: item.sumMoney, name: item.name, itemStyle: { color: this.data.colorList[index%5] }}
+          }),
+          sbutext: `本月累计${sum}元`
+        })
+        resolve(res)
+      })
+    })
+  },
   getCategories() {
     cloudRequest({
       name: 'queryCategories',
       data: {}
     }).then(res => {
       this.setData({
-        costCategoriesList: res.result
+        costCategoriesList: this.data.costCategoriesList.concat(res.result)
       })
     })
   },
@@ -40,17 +106,36 @@ Page({
       data: this.data.sendData
     }).then(res => {
       const { pageNum, pageSize, total, list } = res.result
-      const billList = list.map(item => {
+      let billList = list.map(item => {
         item.date = new Date(item.date).Format('yyyy-MM-dd')
         item.money = parseFloat(item.money).toFixed(2)
         return item
       })
+      if(pageNum > 0) {
+        billList = this.data.billList.concat(billList)
+      }
       this.setData({
         billList,
         total,
         'sendData.pageNum': pageNum,
-        'sendData.pageSize': pageSize
+        'sendData.pageSize': pageSize,
+        isFinished: total <= ((pageNum + 1) * pageSize)
       })
+      console.log(res)
+    })
+  },
+  deleteBill(e) {
+    const { id } = e.currentTarget.dataset
+    cloudRequest({
+      name: 'deleteBillById',
+      data: { _id: id }
+    }).then(res => {
+      wx.showToast({
+        title: '删除成功',
+        icon: 'success',
+        duration: 2000
+      })
+      this.getBillList()
       console.log(res)
     })
   },
@@ -71,16 +156,29 @@ Page({
     const { id } = e.currentTarget.dataset
     this.setData({
       month: id + 1,
-      'sendData.dateTime': new Date().setMonth(id + 1),
-      modelName: null,
+      'sendData.dateTime': new Date().setMonth(id),
     })
+    this.getBillList()
+    this.closeDrop()
   },
   selectCategories(e) {
     const { id, name } = e.currentTarget.dataset
     this.setData({
-      name,
+      costCategories:name,
       'sendData.costCategories': id,
+    })
+    this.getBillList()
+    this.closeDrop()
+  },
+  closeDrop() {
+    this.setData({
       modelName: null,
+    })
+  },
+  goUpdate(e) {
+    const { id } = e.currentTarget.dataset
+    wx.navigateTo({
+      url: `/pages/keepAccounts/keepAccounts?id=${id}`,
     })
   },
   // ListTouch触摸开始
@@ -111,5 +209,41 @@ Page({
     this.setData({
       ListTouchDirection: null
     })
+  },
+  initChart(canvas, width, height, dpr) {
+    const chart = echarts.init(canvas, null, {
+      width: width,
+      height: height,
+      devicePixelRatio: dpr // 像素
+    });
+    canvas.setChart(chart);
+
+    var option = {
+      title: { text: '当月花销统计', subtext: this.data.sbutext, left: 'center' },
+      tooltip: { trigger: 'item' },
+      legend: {
+        bottom: 10,
+        left: 'center',
+        data: this.data.legendList
+      },
+      series: [
+        {
+          type: 'pie',
+          radius: '65%',
+          center: ['50%', '50%'],
+          selectedMode: 'single',
+          data: this.data.seriesList,
+          emphasis: {
+            itemStyle: {
+              shadowBlur: 10,
+              shadowOffsetX: 0,
+              shadowColor: 'rgba(0, 0, 0, 0.5)'
+            }
+          }
+        }
+      ]
+    };
+    chart.setOption(option);
+    return chart;
   }
 })

@@ -4,17 +4,17 @@
   <form>
     <view class="cu-form-group margin-top">
       <view class="title">消费名称</view>
-      <input placeholder="消费名称" bindblur="getShoppingName"></input>
+      <input placeholder="消费名称" value="{{sendData.shoppingName}}" bindblur="getShoppingName"></input>
     </view>
     <view class="cu-form-group">
       <view class="title">消费金额</view>
-      <input type="digit" placeholder="消费金额" data-key="money" bindblur="setBindData"></input>
+      <input type="digit" placeholder="消费金额" value="{{sendData.money}}" data-key="money" bindblur="setBindData"></input>
     </view>
     <view class="cu-form-group">
       <view class="title">消费对象</view>
       <picker bindchange="consumptionChange" value="{{consumptionIndex}}" range="{{consumptionList}}" range-key="name">
         <view class="picker">
-          {{consumptionIndex?consumptionList[consumptionIndex].name:'请选择'}}
+          {{(consumptionIndex||consumptionIndex === 0) ?consumptionList[consumptionIndex].name:'请选择'}}
         </view>
       </picker>
     </view>
@@ -22,7 +22,7 @@
       <view class="title">消费种类</view>
       <picker bindchange="categoriesChange" value="{{categoriesIndex}}" range="{{categoriesList}}" range-key="name">
         <view class="picker">
-          {{categoriesIndex?categoriesList[categoriesIndex].name:'请选择'}}
+          {{(categoriesIndex||categoriesIndex === 0) ?categoriesList[categoriesIndex].name:'请选择'}}
         </view>
       </picker>
     </view>
@@ -54,6 +54,6 @@
     </view>
   </form>
   <view class="padding">
-    <button class="cu-btn block bg-blue margin-tb-sm lg" type="" bindtap="save">提交</button>
+    <button class="cu-btn block bg-blue margin-tb-sm lg" type="" bindtap="commit">提交</button>
   </view>
 </view>

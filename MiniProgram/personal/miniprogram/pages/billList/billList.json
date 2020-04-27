@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "custom": "/components/custom/custom"
-  }
+    "custom": "/components/custom/custom",
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  },
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50
 }

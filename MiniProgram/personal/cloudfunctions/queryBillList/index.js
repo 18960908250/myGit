@@ -12,7 +12,8 @@ exports.main = async(event, context) => {
     dateType,
     payType,
     costCategories,
-    consumptionType
+    consumptionType,
+    _id
   } = event
   const {
     OPENID
@@ -24,14 +25,16 @@ exports.main = async(event, context) => {
   let queryOption = {
     'userInfo.openId': OPENID
   }
+  if (_id) queryOption._id = _id
   if (startTime) queryOption.date = _.and(_.gt(startTime), _.lt(endTime))
-  if (payType) queryOption.payType = payType
-  if (costCategories) queryOption.costCategories = costCategories
-  if (consumptionType) queryOption.consumptionType = consumptionType
+  if (payType || payType === 0) queryOption.payType = payType
+  if (costCategories || costCategories === 0) queryOption.costCategories = costCategories
+  if (consumptionType || consumptionType === 0) queryOption.consumptionType = consumptionType
   const {
     total
   } = await db.collection('bill').where(queryOption).count()
   if (total > pageNum * pageSize) {
+    
     const {
       data
     } = await db.collection('bill').where(queryOption).limit(pageSize).skip(pageNum * pageSize).get()
@@ -51,6 +54,7 @@ exports.main = async(event, context) => {
     }
   }
   return {
+    list: [],
     pageNum,
     pageSize,
     total

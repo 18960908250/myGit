@@ -25,7 +25,15 @@ Page({
       postcode: 350011
     }
   },
-  onLoad: function (options) {},
+  onLoad: function (options) {
+    console.log(options)
+    const { id } = options
+    if(id) {
+      this.setData({
+        _id: id
+      })
+    }
+  },
   onReady: function () {
     this.init()
   },
@@ -35,29 +43,89 @@ Page({
       'sendData.date': new Date().getTime(),
        time: new Date().Format('hh:mm')
     })
-    this.getPayTypeArray()
-    this.getConsumptionList()
-    this.getCategoriesList()
+    Promise.all([this.getPayTypeArray(),this.getConsumptionList(),this.getCategoriesList()]).then((result) => {
+      if (this.data._id) this.getBillList()
+    })
+  },
+  getBillList() {
+    cloudRequest({
+      name: 'queryBillList',
+      data: { 
+        _id: this.data._id,
+        pageNum: 0,
+        pageSize: 10,
+        }
+    }).then(res => {
+      const data = res.result.list[0]
+      const sendData = {
+        shoppingName: data.shoppingName,
+        money: data.money,
+        consumptionType: data.consumptionType,
+        costCategories: data.costCategories,
+        date: data.date,
+        payType: data.payType,
+        province: data.province,
+        city: data.city,
+        district: data.district,
+        postcode: data.postcode
+      }
+      let consumptionIndex = 0
+      this.data.consumptionList.forEach((item, index) => {
+        if (item.id === sendData.consumptionType) {
+          consumptionIndex = index
+        }
+      })
+      let categoriesIndex = 0
+      this.data.categoriesList.forEach((item, index) => {
+        if (item.id === sendData.costCategories) {
+          categoriesIndex = index
+        }
+      })
+      let multiIndexList = []
+      this.data.payTypeArray.forEach((item, index) => {
+        item.children.forEach((items, indexs) => {
+          if (items.id === sendData.payType) {
+            multiIndexList = [index, indexs]
+          }
+        })
+      })
+      this.setData({
+        sendData: sendData,
+        date: sendData.date,
+        consumptionIndex,
+        categoriesIndex,
+        multiIndexList
+      })
+    })
   },
   getPayTypeArray() {
-    cloudRequest({
-      name: 'queryPayType',
-    }).then(res => {
-      this.setData({ payTypeArray: res.result })
-      this.setData({
-        multiArray: [this.data.payTypeArray, this.data.payTypeArray[0].children],
-        'sendData.payType': this.data.payTypeArray[0].children[0].id
+    return new Promise((resolve, reject) => {
+      cloudRequest({
+        name: 'queryPayType',
+      }).then(res => {
+        this.setData({ payTypeArray: res.result })
+        this.setData({
+          multiArray: [this.data.payTypeArray, this.data.payTypeArray[0].children],
+          'sendData.payType': this.data.payTypeArray[0].children[0].id
+        })
+        resolve(res)
       })
     })
   },
   getConsumptionList() {
-    cloudRequest({ name: 'queryConsumption' }).then(res => {
-      this.setData({ consumptionList: res.result })
+    return new Promise((resolve, reject) => {
+      cloudRequest({ name: 'queryConsumption' }).then(res => {
+        this.setData({ consumptionList: res.result })
+        resolve(res)
+      })
     })
   },
   getCategoriesList() {
-    cloudRequest({ name: 'queryCategories' }).then(res => {
-      this.setData({ categoriesList: res.result })
+    return new Promise((resolve, reject) => {
+      cloudRequest({ name: 'queryCategories' }).then(res => {
+        this.setData({ categoriesList: res.result })
+        resolve(res)
+      })
     })
   },
   getShoppingName(e) {
@@ -143,10 +211,17 @@ Page({
     }
     return false
   },
-  save() {
+  commit() {
     const data = this.data.sendData
     if (this.verify(data)) return
-    cloudRequest({ name: 'saveBill', data }).then(res => {
+    if(this.data._id) {
+      this.update()
+    } else {
+      this.save()
+    }
+  },
+  save() {
+    cloudRequest({ name: 'saveBill', data: this.data.sendData }).then(res => {
       wx.showToast({
         title: '保存成功',
         icon: 'success',
@@ -157,5 +232,20 @@ Page({
       })
     })
   },
-
+  update() {
+    const data = {
+      ...this.data.sendData,
+      _id: this.data._id
+    }
+    cloudRequest({ name: 'updateBill', data }).then(res => {
+      wx.showToast({
+        title: '修改成功',
+        icon: 'success',
+        duration: 2000
+      })
+      wx.redirectTo({
+        url: '/pages/index/index?tabIndex=classify'
+      })
+    })
+  }
 })
