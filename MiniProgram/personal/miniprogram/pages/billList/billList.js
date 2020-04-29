@@ -18,6 +18,7 @@ Page({
     modelName: '',
     costCategoriesList: [{id: null, name: '全部'}],
     monthList: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+    charMonth: '',
     colorList: ['#1cbbb4', '#0081ff', '#8dc63f', '#0081ff', '#39b54a'],
     legendList: ['西凉', '益州', '兖州', '荆州', '幽州'],
     seriesList: [
@@ -27,19 +28,15 @@ Page({
       { value: 634, name: '益州', itemStyle: { color: '#0081ff' } },
       { value: 735, name: '西凉', itemStyle: { color: '#39b54a' } }],
     sbutext: '',
-    ec: {}
+    chatTitle: '',
+    ec: {},
+    showChart:true
   },
   onLoad: function(options) {},
   onReady: function() {
     this.getBillList()
     this.getCategories()
-    this.getAllBill().then(() => {
-      this.setData({
-        ec: {
-          onInit: this.initChart
-        }
-      })
-    })
+    this.queryChat()
   },
   onPullDownRefresh: function() {
     this.setData({
@@ -58,12 +55,13 @@ Page({
       this.getBillList()
     }
   },
-  getAllBill() {
-    return new Promise((resolve, reject) => {
-      let year = new Date().getFullYear()
-      let month = new Date().getMonth()
-      let startTime = 0
-      let endTime = 0
+  queryChat(startTime, endTime) {
+    this.setData({
+      showChart:false
+    })
+    let year = new Date().getFullYear()
+    let month = new Date().getMonth()
+    if(!startTime) {
       if (month === 11) {
         startTime = new Date(year, month).getTime()
         endTime = new Date(year + 1, 0, 0).getTime()
@@ -71,6 +69,21 @@ Page({
         startTime = new Date(year, month).getTime()
         endTime = new Date(year, month + 1, 0).getTime()
       }
+    }
+    this.getAllBill(startTime, endTime).then(() => {
+      this.setData({
+        showChart: true,
+        ec: {
+          onInit: this.initChart
+        }
+      })
+    })
+  },
+  getAllBill(startTime, endTime) {
+    return new Promise((resolve, reject) => {
+      const year = new Date(startTime).getFullYear()
+      const month = new Date(startTime).getMonth() + 1
+      const chatTitle = endTime - startTime > 2592000000 ? `${year}年花销统计` : `${month}月花销统计`
       cloudRequest({
         name: 'queryAllBill',
         data: {
@@ -82,9 +95,10 @@ Page({
         this.setData({
           legendList: list.map(item => item.name),
           seriesList: list.map((item, index) => {
-            return { value: item.sumMoney, name: item.name, itemStyle: { color: this.data.colorList[index%5] }}
+            return { value: item.sumMoney, name: item.name, itemStyle: { color: this.data.colorList[index % 5] } }
           }),
-          sbutext: `本月累计${sum}元`
+          sbutext: `本月累计${sum}元`,
+          chatTitle
         })
         resolve(res)
       })
@@ -155,6 +169,7 @@ Page({
   selectMonth(e) {
     const { id } = e.currentTarget.dataset
     this.setData({
+      'sendData.pageNum': 0,
       month: id + 1,
       'sendData.dateTime': new Date().setMonth(id),
     })
@@ -164,6 +179,7 @@ Page({
   selectCategories(e) {
     const { id, name } = e.currentTarget.dataset
     this.setData({
+      'sendData.pageNum': 0,
       costCategories:name,
       'sendData.costCategories': id,
     })
@@ -179,6 +195,12 @@ Page({
     const { id } = e.currentTarget.dataset
     wx.navigateTo({
       url: `/pages/keepAccounts/keepAccounts?id=${id}`,
+    })
+  },
+  pickerChangeMonth(e) {
+    const { value } = e.detail
+    this.setData({
+      charMonth: parseInt(value)
     })
   },
   // ListTouch触摸开始
@@ -210,6 +232,15 @@ Page({
       ListTouchDirection: null
     })
   },
+  pickShow(e) {
+    this.setData({
+      showChart: !e.detail.show
+    })
+    if(e.detail.startTime) {
+      const { startTime, endTime } = e.detail
+      this.queryChat(startTime, endTime)
+    }
+  },
   initChart(canvas, width, height, dpr) {
     const chart = echarts.init(canvas, null, {
       width: width,
@@ -219,7 +250,7 @@ Page({
     canvas.setChart(chart);
 
     var option = {
-      title: { text: '当月花销统计', subtext: this.data.sbutext, left: 'center' },
+      title: { text: this.data.chatTitle, subtext: this.data.sbutext, left: 'center' },
       tooltip: { trigger: 'item' },
       legend: {
         bottom: 10,

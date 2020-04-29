@@ -6,7 +6,7 @@
       {{item}}
     </view>
   </scroll-view>
-  <view  wx:if="{{TabCur === 0}}">
+  <view wx:if="{{TabCur === 0}}">
     <view class="cu-bar bg-white solid-bottom">
       <view class="action" data-model-name="costCategories" catchtap="showMenu">
         <text>{{costCategories}}</text>
@@ -55,7 +55,10 @@
     </view>
   </view>
   <view class="echartBox" wx:if="{{TabCur === 1}}">
-    <view class="container">
+    <view>
+      <datePicker bind:parentEvent='pickShow'/>
+    </view>
+    <view class="container" wx:if="{{showChart}}">
       <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
     </view>
   </view>

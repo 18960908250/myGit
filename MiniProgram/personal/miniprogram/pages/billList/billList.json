@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "custom": "/components/custom/custom",
-    "ec-canvas": "../../ec-canvas/ec-canvas"
+    "ec-canvas": "../../ec-canvas/ec-canvas",
+    "datePicker": "/components/datePicker/datePicker"
   },
   "enablePullDownRefresh": true,
   "onReachBottomDistance": 50

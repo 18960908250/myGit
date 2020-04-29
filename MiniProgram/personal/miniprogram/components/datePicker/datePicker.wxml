@@ -1,0 +1,26 @@
+<!--components/datePicker/datePicker.wxml-->
+<view class="datePicker">
+  <form>
+    <view class="cu-form-group">
+      <view>
+        <switch class="cyan sm" checked bindchange="changeSwitch" />
+        <text>{{selectType? '按月': '按年'}}</text>
+      </view>
+      <view bindtap="showPicker">{{dateText}}</view>
+    </view>
+  </form>
+  <view class="pickBox {{show ? 'show': ''}}">
+    <view class="pickBtn">
+      <text catchtap="closePicker">取消</text>
+      <text catchtap="checkPicker">确认</text>
+    </view>
+    <picker-view class="picker" indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" catchchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{years}}" wx:key style="line-height: 50px">{{item}}年</view>
+      </picker-view-column>
+      <picker-view-column wx:if="{{selectType}}">
+        <view wx:for="{{months}}" wx:key style="line-height: 50px">{{item}}月</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>
