@@ -20,6 +20,7 @@ exports.main = async(event, context) => {
   }).get()
   if (data.length > 0) {
     return {
+      openId: wxContext.OPENID,
       isLogin: true
     }
   } else {
@@ -33,6 +34,7 @@ exports.main = async(event, context) => {
       }
     } else {
       return {
+        openId: wxContext.OPENID,
         isLogin: true
       }
     }

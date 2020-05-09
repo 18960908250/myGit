@@ -42,7 +42,7 @@ Page({
             // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
             wx.getUserInfo({
               success: res => {
-                app.globalData.userInfo = res.userInfo
+                app.globalData.userInfo = { ...res.userInfo}
                 this.onGetOpenid()
               }
             })
@@ -61,6 +61,7 @@ Page({
     cloudRequest({
       name: 'login',
     }).then(res => {
+      app.globalData.userInfo.openId = res.result.openId
     }).catch(e=> {
       console.error('[云函数] [login] 调用失败', err)
     })
