@@ -3,7 +3,7 @@
     <view slot="backText">返回</view>
     <view slot="content">公共聊天室</view>
   </cu-custom>
-  <scroll-view 
+  <scroll-view
     class="body" 
     scroll-y 
     scroll-with-animation="{{scrollWithAnimation}}"
