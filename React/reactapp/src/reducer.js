@@ -5,7 +5,8 @@ const defaultData = [{
     title: '这是第一首',
     singer: 'IZAYA',
     selected: false,
-    like: false }]
+    like: false
+}]
 
 let data = (data=defaultData, action) => {
     switch (action.type) {
