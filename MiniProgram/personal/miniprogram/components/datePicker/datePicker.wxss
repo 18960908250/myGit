@@ -1,8 +1,0 @@
-/* components/datePicker/datePicker.wxss */
-.pickBox{position: fixed;bottom: 0;width: 100%;z-index: 99;transition: all 0.4s;height:0;overflow: hidden;background: rgba(0,0,0,.5);display: flex;flex-direction: column;justify-content: flex-end;}
-.datePicker .picker{background: #fff;text-align: center;}
-.show{height:calc(100vh - 100rpx - 90rpx - 128rpx);}
-.cu-form-group .title {
-  min-width: calc(4em + 30rpx);
-}
-.datePicker .pickBtn{display: flex;justify-content: space-between;background: #fff;line-height: 40rpx;padding: 0 16rpx;}

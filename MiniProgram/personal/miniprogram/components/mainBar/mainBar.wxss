@@ -1,3 +1,0 @@
-/* components/mainBar.wxss */
-.oiMainBar{position: fixed;bottom: 0;width: 100%;}
-.screen-swiper{margin-bottom: 10rpx;}

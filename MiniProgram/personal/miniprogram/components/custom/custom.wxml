@@ -1,5 +1,0 @@
-<!--components/custom/custom.wxml-->
-<cu-custom class="oiCustom" bgColor="{{bgColor}}" isBack="{{isBack}}" isCustom="{{isCustom}}" bgImage="{{bgImage}}">
-  <view wx:if="backText" slot="backText">{{backText}}</view>
-	<view wx:if="content" slot="content">{{content}}</view>
-</cu-custom>

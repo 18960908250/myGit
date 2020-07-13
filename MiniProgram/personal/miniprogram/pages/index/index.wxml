@@ -1,9 +1,0 @@
-<!--index.wxml-->
-<view class="container">
-  <home wx:if="{{tabIndex === 'index'}}" />
-  <mine wx:if="{{tabIndex === 'mine'}}" />
-  <classify wx:if="{{tabIndex === 'classify'}}" />
-  <mainBar tab-type="{{tabIndex}}" bind:changeIndex="changeIndex" />
-  <official-account></official-account>
-  <dialog id="dialogModel" bind:confirm="nextConfirm"  isGetUserInfo="ture" title="提示" content="您还未授权获取用户信息，请您确认授权" />
-</view>

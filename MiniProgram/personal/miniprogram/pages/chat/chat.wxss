@@ -1,8 +1,0 @@
-page{
-  padding-bottom: 100rpx;
-}
-.chatRoom button:not([size='mini']) {width: auto;}
-.cu-avatar .headerImg{width: 100%;height:100%;}
-
-.cu-item{flex-direction: row-reverse;justify-content: flex-end;}
-.self{flex-direction: row;justify-content: flex-start;}

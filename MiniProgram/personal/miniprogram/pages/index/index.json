@@ -1,9 +1,0 @@
-{
-  "usingComponents": {
-    "mainBar": "/components/mainBar/mainBar",
-    "dialog": "/components/dialog/dialog",
-    "home": "../home/home",
-    "classify": "../classify/classify",
-    "mine": "../mine/mine"
-  }
-}
